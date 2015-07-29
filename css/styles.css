@@ -1195,7 +1195,7 @@ ul.slimmenu.slimmenu-collapsed li .slimmenu-sub-collapser > i {
 }
 .search-tabs-bg > h1 {
   color: #fff;
-  margin-bottom: 25px;
+  margin-bottom: 0px;
 }
 .search-tabs-bg > .tabbable >.tab-content > .tab-pane {
   background: #fff;
