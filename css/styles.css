@@ -10953,3 +10953,16 @@ img.mfp-img {
   -moz-box-sizing: content-box;
   box-sizing: content-box;
 }
+.layoutfont
+{
+font-size:13px !important;
+}
+.heart
+	{
+	border: 2px solid;
+  padding: 4px 12px 6px 12px;
+  border-radius: 6px;
+	}
+	.mt512 {
+  margin-top: 15px !important;
+}
