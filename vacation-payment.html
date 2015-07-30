@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>ableTraveler</title>
+    <title>Traveler - Vacation payment</title>
 
 
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
@@ -20,7 +20,6 @@
     <link rel="stylesheet" href="css/icomoon.css">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/mystyles.css">
-	
     <script src="js/modernizr.js"></script>
 
 
@@ -58,9 +57,11 @@
                             <div class="top-user-area clearfix">
                                 <ul class="top-user-area-list list list-horizontal list-border">
                                     <li class="top-user-area-avatar">
-                                        <a href="login.html">Sign In</a>
+                                        <a href="#">
+                                            <img class="origin round" src="img/amaze_40x40.jpg" alt="Image Alternative text" title="AMaze" />John</a>
+											&nbsp;<span style="color:white">(Agent)</span>
                                     </li>
-                                    <li><a href="register.html">Sign Up</a>
+                                    <li><a href="login.html">Sign Out</a>
                                     </li>
                                    
                                     
@@ -90,7 +91,7 @@
                             </ul>
                         <span class="slimmenu-sub-collapser"><i class="fa fa-angle-down"></i></span></li>
                         
-                        <li><a href="hotelsearch.html">Hotels</a>
+                        <li><a href="defaulthotelsearch.html">Hotels</a>
                             
                         </li>
                         <li><a href="commingsoon.html">Trip Planner</a>
@@ -102,7 +103,7 @@
                                 </li>
 								 <li><a href="commingsoon.html" style="font-size:13px !important">Travel Agencies</a>
                                 </li>
-                                 <li><a href="vacationsearch.html" style="font-size:13px !important">Vocation homes</a>
+                                 <li><a href="defaultvacationsearch.html" style="font-size:13px !important">Vocation homes</a>
                                 </li>
 								<li><a href="commingsoon.html"  style="font-size:13px !important">Limo Companies</a>
                                 </li>
@@ -130,64 +131,117 @@
             </div>
         </header>
 
-       
-
         <div class="gap"></div>
 
 
         <div class="container">
-            <div class="row" data-gutter="60">
+            <div class="row row-wrap">
                 <div class="col-md-4">
-                    <h4>Welcome to Able Traveler</h4>
-                    <p>Nurtured from the seed of a single great idea - to empower the traveller - Able Traveler went on to pioneer the entire online travel industry. Able Traveler has revolutionised the travel industry for Disabled Persons.</p>
-                   <!-- <p>Created to empower the traveller with instant choices, It's aimed to offer a range of best-value products and services along with cutting-edge technology and dedicated round-the-clock customer support.</p> -->
+                    <img class="pp-img" src="img/paypal.png" alt="Image Alternative text" title="Image Title" />
+                    <p>Important: You will be redirected to PayPal's website to securely complete your payment.</p>
+					<a class="btn btn-primary" href="dashboard.html" onclick=" return alert('Payment successfully done');">Checkout via Paypal</a>	
                 </div>
-                <div class="col-md-4"id="login">
-                    <h3>Login</h3>
-                    <form>
-                        <div class="form-group form-group-icon-left"><i class="fa fa-user input-icon input-icon-show"></i>
-                            <label>Username or email</label>
-                            <input class="form-control" placeholder="e.g. betabulls@gmail.com" type="text" />
+
+                <div class="col-md-4">
+                    <h4>Pay via Credit/Debit Card</h4>
+                    <form class="cc-form">
+                        <div class="clearfix">
+                            <div class="form-group form-group-cc-number">
+                                <label>Card Number</label>
+                                <input class="form-control" placeholder="xxxx xxxx xxxx xxxx" type="text" /><span class="cc-card-icon"></span>
+                            </div>
+                            <div class="form-group form-group-cc-cvc">
+                                <label>CVC</label>
+                                <input class="form-control" placeholder="xxxx" type="text" />
+                            </div>
                         </div>
-                        <div class="form-group form-group-icon-left"><i class="fa fa-lock input-icon input-icon-show"></i>
-                            <label>Password</label>
-                            <input class="form-control" type="password" placeholder="password" />
+                        <div class="clearfix">
+                            <div class="form-group form-group-cc-name">
+                                <label>Cardholder Name</label>
+                                <input class="form-control" type="text" />
+                            </div>
+                            <div class="form-group form-group-cc-date">
+                                <label>Valid Thru</label>
+                                <input class="form-control" placeholder="mm/yy" type="text" />
+                            </div>
                         </div>
-                        <a class="btn btn-primary" href="dashboard.html" >Sign in </a>
-					<a href="#" id="forpass" class="forget-password pull-right">Forgot Password?</a>
-						
+                        <div class="checkbox checkbox-small">
+                            <label>
+                                <input class="i-check" type="checkbox" checked/>Add to My Cards</label>
+                        </div>
+                        <a class="btn btn-primary"  href="dashboard.html" onclick=" return alert('Payment successfully done');">Proceed Payment</a>
                     </form>
                 </div>
-				
-				
-				 <div class="col-md-4"id="forgot">
-                    <h3>Forgot Password</h3>
-                    <form>
-                        <div class="form-group form-group-icon-left"><i class="fa fa-user input-icon input-icon-show"></i>
-                            <label>Email Address</label>
-                            <input class="form-control" placeholder="e.g. betabulls@gmail.com" type="text" />
-                        </div>
-                        
-                        <input class="btn btn-primary" id="recovery" value="Recovery password" />
-					
-						
-                    </form>
+
+                <div class="col-md-4">
+                    <div class="booking-item-payment">
+                        <header class="clearfix">
+                            <a class="booking-item-payment-img" href="#">
+                                <img src="img/vacation4.jpg" alt="Image Alternative text" title="hotel 1" />
+                            </a>
+                            <h5 class="booking-item-payment-title"><a href="#">The Victorian Cottage</a></h5>
+                            <ul class="icon-group booking-item-rating-stars">
+                                <li><i class="fa fa-star"></i>
+                                </li>
+                                <li><i class="fa fa-star"></i>
+                                </li>
+                                <li><i class="fa fa-star"></i>
+                                </li>
+                                <li><i class="fa fa-star"></i>
+                                </li>
+                                <li><i class="fa fa-star"></i>
+                                </li>
+                            </ul>
+							<p class="booking-item-address">3 BR, 3 BA, 1 HF BA, Sleeps 16</p>
+                        </header>
+                        <ul class="booking-item-payment-details">
+                            <li>
+                                <h5>Booking for 7 nights</h5>
+                                <div class="booking-item-payment-date">
+                                    <p class="booking-item-payment-date-day">April, 26</p>
+                                    <p class="booking-item-payment-date-weekday">Saturday</p>
+                                </div><i class="fa fa-arrow-right booking-item-payment-date-separator"></i>
+                                <div class="booking-item-payment-date">
+                                    <p class="booking-item-payment-date-day">May, 3</p>
+                                    <p class="booking-item-payment-date-weekday">Saturday</p>
+                                </div>
+                            </li>
+                            <li>
+                                <h5>Price</h5>
+                               
+                                <ul class="booking-item-payment-price">
+                                    <li>
+                                        <p class="booking-item-payment-price-title">7 Nights</p>
+                                        <p class="booking-item-payment-price-amount">$150<small>/per day</small>
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p class="booking-item-payment-price-title">Taxes</p>
+                                        <p class="booking-item-payment-price-amount">$15<small>/per day</small>
+                                        </p>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <p class="booking-item-payment-total">Total trip: <span>$1,155</span>
+                        </p>
+                    </div>
                 </div>
-               
             </div>
+            <div class="gap"></div>
         </div>
 
 
 
-        <div class="gap"></div>
-        <footer id="main-footer">
+       
+      <footer id="main-footer">
             <div class="container">
                 <div class="row row-wrap">
                     <div class="col-md-3">
                         <a class="logo" href="index.html">
                             <img src="img/logo-invert.png" alt="Image Alternative text" title="Image Title" />
                         </a>
-                        <p class="mb20">Booking, reviews and advices on hotels, resorts, flights, vacation rentals, travel packages, and lots more!</p>
+                        <p class="mb20">Booking, reviews and advices on hotels, resorts, vacation rentals, and lots more!</p>
                         <ul class="list list-horizontal list-space">
                             <li>
                                 <a class="fa fa-facebook box-icon-normal round animate-icon-bottom-to-top" href="#"></a>
@@ -238,13 +292,14 @@
                     <div class="col-md-4">
                         <h4>Have Questions?</h4>
                         <h4 class="text-color">+1-202-555-0173</h4>
-                        <h4><a href="#" class="text-color">support@AbleTraveler.com</a></h4>
+                        <h4><a href="#" class="text-color">support@ableTraveler.com</a></h4>
                         <p>24/7 Dedicated Customer Support</p>
                     </div>
 
                 </div>
             </div>
         </footer>
+
 
         <script src="js/jquery.js"></script>
         <script src="js/bootstrap.js"></script>
@@ -266,35 +321,6 @@
         <script src="js/countdown.js"></script>
         <script src="js/gridrotator.js"></script>
         <script src="js/custom.js"></script>
-		<script>
-		$(window).load(function(){       
-		$("#signup").hide();
-		$("#forgot").hide();
-		});
-
-	$(document).ready(function() {
-    $('#sign').click(function() {
-    $('#login').hide();
-	$("#signup").show();
-});
-
-$("#forpass").click(function()
-{
-$("#forgot").show();
-$('#login').hide();
-})
-
-$("#recovery").click(function()
-{
-  $("#forgot").hide();
-$('#login').show();
-})
-}); 
-		
-
-
-</script>
-		
     </div>
 </body>
 
