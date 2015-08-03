@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>Traveler - limo payment</title>
+    <title>Traveler - Travel Photos</title>
 
 
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
@@ -131,100 +131,183 @@
             </div>
         </header>
 
-
-        <div class="gap"></div>
-
-
         <div class="container">
-            <div class="row row-wrap">
-                <div class="col-md-4">
-                    <img class="pp-img" src="img/paypal.png" alt="Image Alternative text" title="Image Title" />
-                    <p>Important: You will be redirected to PayPal's website to securely complete your payment.</p>
-					<a class="btn btn-primary" href="dashboard.html" onclick=" return alert('Payment successfully done');">Checkout via Paypal</a>	
-                </div>
-
-                <div class="col-md-4">
-                    <h4>Pay via Credit/Debit Card</h4>
-                    <form class="cc-form">
-                        <div class="clearfix">
-                            <div class="form-group form-group-cc-number">
-                                <label>Card Number</label>
-                                <input class="form-control" placeholder="xxxx xxxx xxxx xxxx" type="text" /><span class="cc-card-icon"></span>
-                            </div>
-                            <div class="form-group form-group-cc-cvc">
-                                <label>CVC</label>
-                                <input class="form-control" placeholder="xxxx" type="text" />
-                            </div>
-                        </div>
-                        <div class="clearfix">
-                            <div class="form-group form-group-cc-name">
-                                <label>Cardholder Name</label>
-                                <input class="form-control" type="text" />
-                            </div>
-                            <div class="form-group form-group-cc-date">
-                                <label>Valid Thru</label>
-                                <input class="form-control" placeholder="mm/yy" type="text" />
-                            </div>
-                        </div>
-                        <div class="checkbox checkbox-small">
-                            <label>
-                                <input class="i-check" type="checkbox" checked/>Add to My Cards</label>
-                        </div>
-                        <a class="btn btn-primary" href="dashboard.html" onclick=" return alert('Payment successfully done');" />Proceed Payment</a>
-                    </form>
-                </div>
-
-                <div class="col-md-4">
-                    <div class="booking-item-payment">
-                        <header class="clearfix">
-                            <a class="booking-item-payment-img" href="#">
-                                <img src="img/Maserati-GranTurismo-Sport-facelift.png" alt="Image Alternative text" title="Image Title" />
-                            </a>
-                            <h5 class="booking-item-payment-title"><a href="#">Maserati GranTurismo</a></h5>
-                        </header>
-                        <ul class="booking-item-payment-details">
-                            <li>
-                                <h5>Rent for 7 days</h5>
-                                <div class="booking-item-payment-date">
-                                    <p class="booking-item-payment-date-day">April, 26</p>
-                                    <p class="booking-item-payment-date-weekday">Saturday</p>
-                                </div><i class="fa fa-arrow-right booking-item-payment-date-separator"></i>
-                                <div class="booking-item-payment-date">
-                                    <p class="booking-item-payment-date-day">May, 3</p>
-                                    <p class="booking-item-payment-date-weekday">Saturday</p>
-                                </div>
-                            </li>
-                            <li>
-                                <h5>Car (2 Passengers)</h5>
-                                <ul class="booking-item-payment-price">
-                                    <li>
-                                        <p class="booking-item-payment-price-title">Equipment</p>
-                                        <p class="booking-item-payment-price-amount">$295</p>
-                                    </li>
-                                    <li>
-                                        <p class="booking-item-payment-price-title">7 days</p>
-                                        <p class="booking-item-payment-price-amount">$70<small>/per day</small>
-                                        </p>
-                                    </li>
-                                    <li>
-                                        <p class="booking-item-payment-price-title">Taxes</p>
-                                        <p class="booking-item-payment-price-amount">$5<small>/per day</small>
-                                        </p>
-                                    </li>
-                                </ul>
-                            </li>
-                        </ul>
-                        <p class="booking-item-payment-total">Total trip: <span>$842</span>
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="gap"></div>
+            <h4 class="page-title" style="font-size:50px">Travel Photos</h4>
         </div>
 
 
 
-       <footer id="main-footer">
+
+        <div class="container">
+            <div class="row">
+               <div class="col-md-3">
+                    <aside class="user-profile-sidebar">
+                        <div class="user-profile-avatar text-center">
+                            <img src="img/amaze300.jpg" alt="Image Alternative text" title="AMaze" />
+                            <h5>John Doe</h5>
+                            <p>Member Since May 2012</p>
+                        </div>
+                        <ul class="list user-profile-nav">
+                            <li><a href="user-profile.html"><i class="fa fa-user"></i>Overview</a>
+                            </li>
+                            <li><a href="user-profile-edit.html"><i class="fa fa-cog"></i>Edit Profile</a>
+                            </li>
+							 <li><a href="changepassword.html"><i class="fa fa-key"></i>Change Password</a>
+                            </li>
+                            <li><a href="user-profile-photos.html" style="color:orange"><i class="fa fa-camera"></i>My Travel Photos</a>
+                            </li>
+                            <li><a href="user-profile-booking-history.html"><i class="fa fa-clock-o"></i>Booking History</a>
+                            </li>
+                           
+                            <li><a href="user-profile-wishlist.html"><i class="fa fa-heart-o"></i>Wishlist</a>
+                            </li>
+                        </ul>
+                    </aside>
+					<div id="map-canvas" style="width:90%; height:300px;"></div>
+                </div>
+                <div class="col-md-9">
+                    <a href="#" class="btn btn-primary mb20"><i class="fa fa-plus-circle"></i> Add new photo</a>
+                    <div class="row row-no-gutter">
+                        <div class="col-md-4">
+                            <div class="thumb">
+                                <a class="hover-img" href="#">
+                                    <img src="img/travel1.jpg" alt="Image Alternative text" title="the journey home" />
+                                    <div class="hover-inner hover-inner-block hover-inner-bottom hover-inner-bg-black hover-inner-sm hover-hold">
+                                        <div class="text-small">
+                                            <p><i class="fa fa-map-marker"></i> New York, NY (Midtown East)</p><small class="text-white">July 10, 2014</small>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                       
+                        
+                        <div class="col-md-4">
+                            <div class="thumb">
+                                <a class="hover-img" href="#">
+                                    <img src="img/travel5.jpg" alt="Image Alternative text" title="people on the beach" />
+                                    <div class="hover-inner hover-inner-block hover-inner-bottom hover-inner-bg-black hover-inner-sm hover-hold">
+                                        <div class="text-small">
+                                            <p><i class="fa fa-map-marker"></i> Queens (LaGuardia Airport (LGA))</p><small class="text-white">July 25, 2014</small>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="thumb">
+                                <a class="hover-img" href="#">
+                                    <img src="img/travel7.jpg" alt="Image Alternative text" title="Gaviota en el Top" />
+                                    <div class="hover-inner hover-inner-block hover-inner-bottom hover-inner-bg-black hover-inner-sm hover-hold">
+                                        <div class="text-small">
+                                            <p><i class="fa fa-map-marker"></i> Flushing, NY (LaGuardia Airport (LGA))</p><small class="text-white">July 6, 2014</small>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="thumb">
+                                <a class="hover-img" href="#">
+                                    <img src="img/travel8.jpg" alt="Image Alternative text" title="4 Strokes of Fun" />
+                                    <div class="hover-inner hover-inner-block hover-inner-bottom hover-inner-bg-black hover-inner-sm hover-hold">
+                                        <div class="text-small">
+                                            <p><i class="fa fa-map-marker"></i> New York, NY (Upper West Side)</p><small class="text-white">July 8, 2014</small>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="thumb">
+                                <a class="hover-img" href="#">
+                                    <img src="img/travel9.jpg" alt="Image Alternative text" title="Pictures at the museum" />
+                                    <div class="hover-inner hover-inner-block hover-inner-bottom hover-inner-bg-black hover-inner-sm hover-hold">
+                                        <div class="text-small">
+                                            <p><i class="fa fa-map-marker"></i> Long Island City, NY (Long Island City - Astoria)</p><small class="text-white">July 3, 2014</small>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="thumb">
+                                <a class="hover-img" href="#">
+                                    <img src="img/travel10.jpg" alt="Image Alternative text" title="new york at an angle" />
+                                    <div class="hover-inner hover-inner-block hover-inner-bottom hover-inner-bg-black hover-inner-sm hover-hold">
+                                        <div class="text-small">
+                                            <p><i class="fa fa-map-marker"></i> Long Island City, NY (Long Island City - Astoria)</p><small class="text-white">July 16, 2014</small>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="thumb">
+                                <a class="hover-img" href="#">
+                                    <img src="img/travel8.jpg" alt="Image Alternative text" title="4 Strokes of Fun" />
+                                    <div class="hover-inner hover-inner-block hover-inner-bottom hover-inner-bg-black hover-inner-sm hover-hold">
+                                        <div class="text-small">
+                                            <p><i class="fa fa-map-marker"></i> New York, NY (Upper West Side)</p><small class="text-white">July 8, 2014</small>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="thumb">
+                                <a class="hover-img" href="#">
+                                    <img src="img/travel9.jpg" alt="Image Alternative text" title="Pictures at the museum" />
+                                    <div class="hover-inner hover-inner-block hover-inner-bottom hover-inner-bg-black hover-inner-sm hover-hold">
+                                        <div class="text-small">
+                                            <p><i class="fa fa-map-marker"></i> Long Island City, NY (Long Island City - Astoria)</p><small class="text-white">July 3, 2014</small>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div><div class="col-md-4">
+                            <div class="thumb">
+                                <a class="hover-img" href="#">
+                                    <img src="img/travel8.jpg" alt="Image Alternative text" title="4 Strokes of Fun" />
+                                    <div class="hover-inner hover-inner-block hover-inner-bottom hover-inner-bg-black hover-inner-sm hover-hold">
+                                        <div class="text-small">
+                                            <p><i class="fa fa-map-marker"></i> New York, NY (Upper West Side)</p><small class="text-white">July 8, 2014</small>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                       
+                        
+                       
+                    </div>
+                    <div class="gap gap-small"></div>
+                    <ul class="pagination">
+                        <li class="active"><a href="#">1</a>
+                        </li>
+                        <li><a href="#">2</a>
+                        </li>
+                        <li><a href="#">3</a>
+                        </li>
+                        <li><a href="#">4</a>
+                        </li>
+                        <li><a href="#">5</a>
+                        </li>
+                        
+                        <li class="dots">...</li>
+                        <li><a href="#">15</a>
+                        </li>
+                        <li class="next"><a href="#">Next Page</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="gap"></div>
+        <footer id="main-footer">
             <div class="container">
                 <div class="row row-wrap">
                     <div class="col-md-3">
@@ -289,6 +372,7 @@
                 </div>
             </div>
         </footer>
+
         <script src="js/jquery.js"></script>
         <script src="js/bootstrap.js"></script>
         <script src="js/slimmenu.js"></script>

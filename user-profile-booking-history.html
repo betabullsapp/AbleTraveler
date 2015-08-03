@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>Traveler - limo payment</title>
+    <title>Traveler - Booking History</title>
 
 
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
@@ -41,7 +41,7 @@
     </script>
     <!-- /FACEBOOK WIDGET -->
     <div class="global-wrap">
-       <header id="main-header">
+         <header id="main-header">
             <div class="header-top">
                 <div class="container">
                     <div class="row">
@@ -77,7 +77,7 @@
                         <li class="active"><a href="dashboard.html">Home</a>
                             
                         </li>
-                         <li class="slimmenu-sub-menu"><a href="user-profile.html">Profile</a>
+                       <li class="slimmenu-sub-menu"><a href="user-profile.html">Profile</a>
                             <ul style="display: none; height: 252px; padding-top: 0px; margin-top: 0px; padding-bottom: 0px; margin-bottom: 0px;">
                                 <li><a href="user-profile.html" style="font-size:13px !important">View Profile</a>
                                 </li>
@@ -132,99 +132,143 @@
         </header>
 
 
-        <div class="gap"></div>
-
-
         <div class="container">
-            <div class="row row-wrap">
-                <div class="col-md-4">
-                    <img class="pp-img" src="img/paypal.png" alt="Image Alternative text" title="Image Title" />
-                    <p>Important: You will be redirected to PayPal's website to securely complete your payment.</p>
-					<a class="btn btn-primary" href="dashboard.html" onclick=" return alert('Payment successfully done');">Checkout via Paypal</a>	
-                </div>
-
-                <div class="col-md-4">
-                    <h4>Pay via Credit/Debit Card</h4>
-                    <form class="cc-form">
-                        <div class="clearfix">
-                            <div class="form-group form-group-cc-number">
-                                <label>Card Number</label>
-                                <input class="form-control" placeholder="xxxx xxxx xxxx xxxx" type="text" /><span class="cc-card-icon"></span>
-                            </div>
-                            <div class="form-group form-group-cc-cvc">
-                                <label>CVC</label>
-                                <input class="form-control" placeholder="xxxx" type="text" />
-                            </div>
-                        </div>
-                        <div class="clearfix">
-                            <div class="form-group form-group-cc-name">
-                                <label>Cardholder Name</label>
-                                <input class="form-control" type="text" />
-                            </div>
-                            <div class="form-group form-group-cc-date">
-                                <label>Valid Thru</label>
-                                <input class="form-control" placeholder="mm/yy" type="text" />
-                            </div>
-                        </div>
-                        <div class="checkbox checkbox-small">
-                            <label>
-                                <input class="i-check" type="checkbox" checked/>Add to My Cards</label>
-                        </div>
-                        <a class="btn btn-primary" href="dashboard.html" onclick=" return alert('Payment successfully done');" />Proceed Payment</a>
-                    </form>
-                </div>
-
-                <div class="col-md-4">
-                    <div class="booking-item-payment">
-                        <header class="clearfix">
-                            <a class="booking-item-payment-img" href="#">
-                                <img src="img/Maserati-GranTurismo-Sport-facelift.png" alt="Image Alternative text" title="Image Title" />
-                            </a>
-                            <h5 class="booking-item-payment-title"><a href="#">Maserati GranTurismo</a></h5>
-                        </header>
-                        <ul class="booking-item-payment-details">
-                            <li>
-                                <h5>Rent for 7 days</h5>
-                                <div class="booking-item-payment-date">
-                                    <p class="booking-item-payment-date-day">April, 26</p>
-                                    <p class="booking-item-payment-date-weekday">Saturday</p>
-                                </div><i class="fa fa-arrow-right booking-item-payment-date-separator"></i>
-                                <div class="booking-item-payment-date">
-                                    <p class="booking-item-payment-date-day">May, 3</p>
-                                    <p class="booking-item-payment-date-weekday">Saturday</p>
-                                </div>
-                            </li>
-                            <li>
-                                <h5>Car (2 Passengers)</h5>
-                                <ul class="booking-item-payment-price">
-                                    <li>
-                                        <p class="booking-item-payment-price-title">Equipment</p>
-                                        <p class="booking-item-payment-price-amount">$295</p>
-                                    </li>
-                                    <li>
-                                        <p class="booking-item-payment-price-title">7 days</p>
-                                        <p class="booking-item-payment-price-amount">$70<small>/per day</small>
-                                        </p>
-                                    </li>
-                                    <li>
-                                        <p class="booking-item-payment-price-title">Taxes</p>
-                                        <p class="booking-item-payment-price-amount">$5<small>/per day</small>
-                                        </p>
-                                    </li>
-                                </ul>
-                            </li>
-                        </ul>
-                        <p class="booking-item-payment-total">Total trip: <span>$842</span>
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="gap"></div>
+            <h4 class="page-title">Booking History</h4>
         </div>
 
 
 
-       <footer id="main-footer">
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <aside class="user-profile-sidebar">
+                        <div class="user-profile-avatar text-center">
+                            <img src="img/amaze300.jpg" alt="Image Alternative text" title="AMaze" />
+                            <h5>John Doe</h5>
+                            <p>Member Since May 2012</p>
+                        </div>
+                        <ul class="list user-profile-nav">
+                            <li><a href="user-profile.html"><i class="fa fa-user"></i>Overview</a>
+                            </li>
+                            <li><a href="user-profile-edit.html"><i class="fa fa-cog"></i>Edit Profile</a>
+                            </li>
+							<li><a href="changepassword.html"><i class="fa fa-key"></i>Change Password</a>
+                            </li>
+                            <li><a href="user-profile-photos.html"><i class="fa fa-camera"></i>My Travel Photos</a>
+                            </li>
+                            <li><a href="user-profile-booking-history.html" style="color:orange"><i class="fa fa-clock-o"></i>Booking History</a>
+                            </li>
+                         
+                            <li><a href="user-profile-wishlist.html"><i class="fa fa-heart-o"></i>Wishlist</a>
+                            </li>
+                        </ul>
+                    </aside>
+                </div>
+                <div class="col-md-9">
+                   
+                    <table class="table table-bordered table-striped table-booking-history">
+                        <thead>
+                            <tr>
+                                <th>Type</th>
+                                <th>Title</th>
+                                <th>Location</th>
+                                <th>Order Date</th>
+                                <th>Execution Date</th>
+                                <th>Cost</th>
+                                <th>Current</th>
+                                <th>Cancel</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            
+                            <tr>
+                                <td class="booking-history-type"><i class="fa fa-building-o"></i><small>hotel</small>
+                                </td>
+                                <td class="booking-history-title">InterContinental New York Barclay</td>
+                                <td>New york City</td>
+                                <td>4/12/2014</td>
+                                <td>4/25/2014 <i class="fa fa-long-arrow-right"></i> 4/30/2014</td>
+                                <td>$1200</td>
+                                <td class="text-center"><i class="fa fa-check"></i>
+                                </td>
+                                <td class="text-center"><a class="btn btn-default btn-sm" href="#">Cancel</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="booking-history-type"><i class="fa fa-dashboard"></i><small>car</small>
+                                </td>
+                                <td class="booking-history-title">Maserati GranTurismo</td>
+                                <td>New york City</td>
+                                <td>4/12/2014</td>
+                                <td>4/25/2014 <i class="fa fa-long-arrow-right"></i> 4/30/2014</td>
+                                <td>$500</td>
+                                <td class="text-center"><i class="fa fa-check"></i>
+                                </td>
+                                <td class="text-center"><a class="btn btn-default btn-sm" href="#">Cancel</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="booking-history-type"><i class="fa fa-bolt"></i><small>activity</small>
+                                </td>
+                                <td class="booking-history-title">Central Park Trip</td>
+                                <td>New york City</td>
+                                <td>4/12/2014</td>
+                                <td>4/27/2014</td>
+                                <td>$0</td>
+                                <td class="text-center"><i class="fa fa-check"></i>
+                                </td>
+                                <td class="text-center"></td>
+                            </tr>
+                            <tr>
+                                <td class="booking-history-type"><i class="fa fa-bolt"></i><small>activity</small>
+                                </td>
+                                <td class="booking-history-title">Music Festival</td>
+                                <td>New york City</td>
+                                <td>4/12/2014</td>
+                                <td>4/28/2014</td>
+                                <td>$100</td>
+                                <td class="text-center"><i class="fa fa-check"></i>
+                                </td>
+                                <td class="text-center"><a class="btn btn-default btn-sm" href="#">Cancel</a>
+                                </td>
+                            </tr>
+                          
+                            <tr>
+                                <td class="booking-history-type"><i class="fa fa-home"></i><small>rental</small>
+                                </td>
+                                <td class="booking-history-title">Modern Chic 3BR Villa Fanisa</td>
+                                <td>Bali</td>
+                                <td>2/12/2014</td>
+                                <td>2/20/2014 <i class="fa fa-long-arrow-right"></i> 2/23/2014</td>
+                                <td>$800</td>
+                                <td class="text-center"><i class="fa fa-times"></i>
+                                </td>
+                                <td class="text-center"></td>
+                            </tr>
+                            
+                            <tr>
+                                <td class="booking-history-type"><i class="fa fa-building-o"></i><small>hotel</small>
+                                </td>
+                                <td class="booking-history-title">Wellington Hotel</td>
+                                <td>San Fancisco</td>
+                                <td>1/01/2014</td>
+                                <td>1/05/2014 <i class="fa fa-long-arrow-right"></i> 1/15/2014</td>
+                                <td>$850</td>
+                                <td class="text-center"><i class="fa fa-times"></i>
+                                </td>
+                                <td class="text-center"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="gap"></div>
+      <footer id="main-footer">
             <div class="container">
                 <div class="row row-wrap">
                     <div class="col-md-3">
@@ -289,6 +333,8 @@
                 </div>
             </div>
         </footer>
+
+
         <script src="js/jquery.js"></script>
         <script src="js/bootstrap.js"></script>
         <script src="js/slimmenu.js"></script>

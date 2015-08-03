@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>Traveler - limo payment</title>
+    <title>Traveler - editProfile</title>
 
 
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
@@ -41,7 +41,7 @@
     </script>
     <!-- /FACEBOOK WIDGET -->
     <div class="global-wrap">
-       <header id="main-header">
+      <header id="main-header">
             <div class="header-top">
                 <div class="container">
                     <div class="row">
@@ -77,7 +77,7 @@
                         <li class="active"><a href="dashboard.html">Home</a>
                             
                         </li>
-                         <li class="slimmenu-sub-menu"><a href="user-profile.html">Profile</a>
+                       <li class="slimmenu-sub-menu"><a href="user-profile.html">Profile</a>
                             <ul style="display: none; height: 252px; padding-top: 0px; margin-top: 0px; padding-bottom: 0px; margin-bottom: 0px;">
                                 <li><a href="user-profile.html" style="font-size:13px !important">View Profile</a>
                                 </li>
@@ -131,100 +131,142 @@
             </div>
         </header>
 
-
-        <div class="gap"></div>
-
-
         <div class="container">
-            <div class="row row-wrap">
-                <div class="col-md-4">
-                    <img class="pp-img" src="img/paypal.png" alt="Image Alternative text" title="Image Title" />
-                    <p>Important: You will be redirected to PayPal's website to securely complete your payment.</p>
-					<a class="btn btn-primary" href="dashboard.html" onclick=" return alert('Payment successfully done');">Checkout via Paypal</a>	
-                </div>
-
-                <div class="col-md-4">
-                    <h4>Pay via Credit/Debit Card</h4>
-                    <form class="cc-form">
-                        <div class="clearfix">
-                            <div class="form-group form-group-cc-number">
-                                <label>Card Number</label>
-                                <input class="form-control" placeholder="xxxx xxxx xxxx xxxx" type="text" /><span class="cc-card-icon"></span>
-                            </div>
-                            <div class="form-group form-group-cc-cvc">
-                                <label>CVC</label>
-                                <input class="form-control" placeholder="xxxx" type="text" />
-                            </div>
-                        </div>
-                        <div class="clearfix">
-                            <div class="form-group form-group-cc-name">
-                                <label>Cardholder Name</label>
-                                <input class="form-control" type="text" />
-                            </div>
-                            <div class="form-group form-group-cc-date">
-                                <label>Valid Thru</label>
-                                <input class="form-control" placeholder="mm/yy" type="text" />
-                            </div>
-                        </div>
-                        <div class="checkbox checkbox-small">
-                            <label>
-                                <input class="i-check" type="checkbox" checked/>Add to My Cards</label>
-                        </div>
-                        <a class="btn btn-primary" href="dashboard.html" onclick=" return alert('Payment successfully done');" />Proceed Payment</a>
-                    </form>
-                </div>
-
-                <div class="col-md-4">
-                    <div class="booking-item-payment">
-                        <header class="clearfix">
-                            <a class="booking-item-payment-img" href="#">
-                                <img src="img/Maserati-GranTurismo-Sport-facelift.png" alt="Image Alternative text" title="Image Title" />
-                            </a>
-                            <h5 class="booking-item-payment-title"><a href="#">Maserati GranTurismo</a></h5>
-                        </header>
-                        <ul class="booking-item-payment-details">
-                            <li>
-                                <h5>Rent for 7 days</h5>
-                                <div class="booking-item-payment-date">
-                                    <p class="booking-item-payment-date-day">April, 26</p>
-                                    <p class="booking-item-payment-date-weekday">Saturday</p>
-                                </div><i class="fa fa-arrow-right booking-item-payment-date-separator"></i>
-                                <div class="booking-item-payment-date">
-                                    <p class="booking-item-payment-date-day">May, 3</p>
-                                    <p class="booking-item-payment-date-weekday">Saturday</p>
-                                </div>
-                            </li>
-                            <li>
-                                <h5>Car (2 Passengers)</h5>
-                                <ul class="booking-item-payment-price">
-                                    <li>
-                                        <p class="booking-item-payment-price-title">Equipment</p>
-                                        <p class="booking-item-payment-price-amount">$295</p>
-                                    </li>
-                                    <li>
-                                        <p class="booking-item-payment-price-title">7 days</p>
-                                        <p class="booking-item-payment-price-amount">$70<small>/per day</small>
-                                        </p>
-                                    </li>
-                                    <li>
-                                        <p class="booking-item-payment-price-title">Taxes</p>
-                                        <p class="booking-item-payment-price-amount">$5<small>/per day</small>
-                                        </p>
-                                    </li>
-                                </ul>
-                            </li>
-                        </ul>
-                        <p class="booking-item-payment-total">Total trip: <span>$842</span>
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="gap"></div>
+            <h3 class="page-title">Edit Profile</h3>
         </div>
 
 
 
-       <footer id="main-footer">
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <aside class="user-profile-sidebar">
+                        <div class="user-profile-avatar text-center">
+                            <img src="img/amaze300.jpg" alt="Image Alternative text" title="AMaze" />
+                            <h5>John Doe</h5>
+                            <p>Member Since May 2012</p>
+                        </div>
+                        <ul class="list user-profile-nav">
+                            <li><a href="user-profile.html"><i class="fa fa-user"></i>Overview</a>
+                            </li>
+                            <li><a href="user-profile-edit.html" style="color:orange"><i class="fa fa-cog"></i>Edit Profile</a>
+                            </li>
+							 <li><a href="changepassword.html"><i class="fa fa-key"></i>Change Password</a>
+                            </li>
+                            <li><a href="user-profile-photos.html"><i class="fa fa-camera"></i>My Travel Photos</a>
+                            </li>
+                            <li><a href="user-profile-booking-history.html"><i class="fa fa-clock-o"></i>Booking History</a>
+                            </li>
+                           
+                            <li><a href="user-profile-wishlist.html"><i class="fa fa-heart-o"></i>Wishlist</a>
+                            </li>
+                        </ul>
+                    </aside>
+					<div id="map-canvas" style="width:90%; height:300px;"></div>
+                </div>
+                 <div class="col-md-9">
+                    <div class="row">
+                        <div class="col-md-5">
+                            <form action="">
+                                <h4>Personal Infomation</h4>
+								 <div class="form-group form-group-icon-left"><i class="fa fa-user input-icon"></i>
+                                    <label>Title Name</label>
+                                    <input class="form-control" value="John" type="text" />
+                                </div>
+                                <div class="form-group form-group-icon-left"><i class="fa fa-user input-icon"></i>
+                                    <label>First Name</label>
+                                    <input class="form-control" value="John" type="text" />
+                                </div>
+                                <div class="form-group form-group-icon-left"><i class="fa fa-user input-icon"></i>
+                                    <label>Last Name</label>
+                                    <input class="form-control" value="Doe" type="text" />
+                                </div>
+                                <div class="form-group form-group-icon-left"><i class="fa fa-envelope input-icon"></i>
+                                    <label>E-mail</label>
+                                    <input class="form-control" value="johndoe@gmail.com" type="text" />
+                                </div>
+								 <div class="form-group form-group-icon-left"><i class="fa fa-phone input-icon"></i>
+                                    <label>Mobile Number</label>
+                                    <input class="form-control" value="+1 202 555 0113" type="text" />
+                                </div>
+                                <div class="form-group form-group-icon-left"><i class="fa fa-phone input-icon"></i>
+                                    <label>Phone Number(Home)</label>
+                                    <input class="form-control" value="+1 202 555 0113" type="text" />
+                                </div>
+								<div class="form-group">
+                                    <label>Favourite destinations</label>
+                                    <input class="form-control" value="46 Gray's Inn Rd, London, WC1X 8LP" type="text" />
+                                </div>
+                                <div class="gap gap-small"></div>
+                            </form>
+                        </div>
+                        <div class="col-md-4 col-md-offset-1">
+						<h4>Disability Information</h4>
+						<label>physically handicaped ?</label>
+						<div class="" style="margin-left: -18px;">
+						<div class="radio-inline " >
+                                <label>
+                                    <input class="" type="checkbox"  onclick="ShowHideDiv()" id="otherID" value="Yes" name="myRadiolist" /> &nbsp;Yes</label>
+                            </div>
+                            <div class="radio-inline ">
+                                <label>
+                                    <input class="" type="checkbox" onclick="ShowHideDiv()" id="otherIDNo" value="No" name="myRadiolist" /> &nbsp;No</label>
+                            </div>
+						
+						</div>
+						
+						
+                           <!-- <div class="checkbox-inline">
+                                <label>
+                                    <input class="i-check" onclick="ShowHideDiv()" id="otherID" value="Yes" type="checkbox" />Yes</label>
+                            </div>
+                            <div class="checkbox-inline">
+                                <label>
+                                    <input class="i-check" onclick="ShowHideDiv()" value="No" type="checkbox" />No</label>
+                            </div> -->
+							 <div class="form-group form-group-icon-left" id="other" >
+                                    <label>Disability information</label>
+                                    <input class="form-control" value="London Heathrow Airport (LHR)" type="text" />
+                                </div>
+                            <h4>Location Information</h4>
+                                <div class="form-group form-group-icon-left"><i class="fa fa-plane input-icon"></i>
+                                    <label>Street Address 1</label>
+                                    <input class="form-control" value="London Heathrow Airport (LHR)" type="text" />
+                                </div>
+                                <div class="form-group">
+                                    <label>Street Address 2</label>
+                                    <input class="form-control" value="46 Gray's Inn Rd, London, WC1X 8LP" type="text" />
+                                </div>
+                                <div class="form-group">
+                                    <label>City</label>
+                                    <input class="form-control" value="London" type="text" />
+                                </div>
+                                <div class="form-group">
+                                    <label>State/Province/Region</label>
+                                    <input class="form-control" value="London" type="text" />
+                                </div>
+                                <div class="form-group">
+                                    <label>ZIP code/Postal code</label>
+                                    <input class="form-control" value="4115523" type="text" />
+                                </div>
+                                <div class="form-group">
+                                    <label>Country</label>
+                                    <input class="form-control" value="United Kingdom" type="text" />
+                                </div>
+                                <hr>
+                                <input type="submit" class="btn btn-primary" value="Save Changes">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="gap"></div>
+<footer id="main-footer">
             <div class="container">
                 <div class="row row-wrap">
                     <div class="col-md-3">
@@ -289,6 +331,7 @@
                 </div>
             </div>
         </footer>
+
         <script src="js/jquery.js"></script>
         <script src="js/bootstrap.js"></script>
         <script src="js/slimmenu.js"></script>
@@ -310,6 +353,35 @@
         <script src="js/gridrotator.js"></script>
         <script src="js/custom.js"></script>
     </div>
+	
+	<style>
+	.page-title {
+  font-size: 50px;
+  margin: 30px 0;
+}
+
+.nav-tabs {
+  border-bottom: 0px solid #dddddd;
+}
+	</style>
+	 <script type="text/javascript">
+    function ShowHideDiv() {
+        var chkYes = document.getElementById("otherID");
+		var chkNo = document.getElementById("otherIDNo");
+        var dvPassport = document.getElementById("other");
+        dvPassport.style.display = chkYes.checked ? "block" : "none";
+		dvPassport.style.display = chkNo.checked ? "none" : "block";
+		
+		
+    }
+
+	
+   
+	
+	$(window).load(function(){
+	    $("#other").hide();
+	})
+</script>
 </body>
 
 </html>
