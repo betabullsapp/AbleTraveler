@@ -55,16 +55,20 @@
                         </div>
                         <div class="col-md-4">
                             <div class="top-user-area clearfix">
-                                <ul class="top-user-area-list list list-horizontal list-border">
-                                    <li class="top-user-area-avatar">
-                                        <a href="#">
+                                <ul class="top-user-area-list list list-horizontal list-border ">
+                                    <li class="top-user-area-avatar dropdown">
+                                       <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                                             <img class="origin round" src="img/amaze_40x40.jpg" alt="Image Alternative text" title="AMaze" />John</a>
-											&nbsp;<span style="color:white">(user)</span>
+											&nbsp;<span style="color:white;cursor:pointer">(user)</span><b class="caret"></b>
+											<ul class="dropdown-menu">
+										<li><a href="user-profile.html"><i class="fa fa-user"></i> &nbsp;My profile</a></li>
+										<li><a href="changepassword.html"><i class="fa fa-key fa-fw"></i> &nbsp;Change Password</a></li>
+										<li class="divider"></li>
+										<li><a href="login.html"><i class="fa fa-sign-out"></i> &nbsp;Sign Out</a></li>
+									  </ul>
                                     </li>
-                                    <li><a href="login.html">Sign Out</a>
-                                    </li>
-                                   
-                                    
+                                   <!--  <li><a href="login.html">Sign Out</a>
+                                    </li> -->
                                 </ul>
                             </div>
                         </div>
