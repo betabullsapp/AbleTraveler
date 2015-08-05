@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>ableTraveler</title>
+    <title>Traveler - Blog & Reviews</title>
 
 
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
@@ -20,7 +20,6 @@
     <link rel="stylesheet" href="css/icomoon.css">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/mystyles.css">
-	
     <script src="js/modernizr.js"></script>
 
 
@@ -42,7 +41,7 @@
     </script>
     <!-- /FACEBOOK WIDGET -->
     <div class="global-wrap">
-       <header id="main-header">
+        <header id="main-header">
             <div class="header-top">
                 <div class="container">
                     <div class="row">
@@ -56,14 +55,20 @@
                         </div>
                         <div class="col-md-4">
                             <div class="top-user-area clearfix">
-                                <ul class="top-user-area-list list list-horizontal list-border">
-                                    <li class="top-user-area-avatar">
-                                        <a href="login.html">Sign In</a>
+                                <ul class="top-user-area-list list list-horizontal list-border ">
+                                    <li class="top-user-area-avatar dropdown">
+                                       <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                            <img class="origin round" src="img/amaze_40x40.jpg" alt="Image Alternative text" title="AMaze" />John</a>
+											&nbsp;<span style="color:white;cursor:pointer">(user)</span><b class="caret"></b>
+											<ul class="dropdown-menu">
+										<li><a href="user-profile.html"><i class="fa fa-user"></i> &nbsp;My profile</a></li>
+										<li><a href="changepassword.html"><i class="fa fa-key fa-fw"></i> &nbsp;Change Password</a></li>
+										<li class="divider"></li>
+										<li><a href="login.html"><i class="fa fa-sign-out"></i> &nbsp;Sign Out</a></li>
+									  </ul>
                                     </li>
-                                    <li><a href="register.html">Sign Up</a>
-                                    </li>
-                                   
-                                    
+                                   <!--  <li><a href="login.html">Sign Out</a>
+                                    </li> -->
                                 </ul>
                             </div>
                         </div>
@@ -73,36 +78,49 @@
             <div class="container">
                 <div class="nav">
                     <ul class="slimmenu" id="slimmenu">
-                        <li class="active"><a href="index.html">Home</a>
+                        <li class="active"><a href="dashboard.html">Home</a>
                             
                         </li>
-                       
+                        <li class="slimmenu-sub-menu"><a href="user-profile.html">Profile</a>
+                            <ul style="display: none; height: 252px; padding-top: 0px; margin-top: 0px; padding-bottom: 0px; margin-bottom: 0px;">
+                                <li><a href="user-profile.html" style="font-size:13px !important">View Profile</a>
+                                </li>
+                                
+								<li><a href="user-profile-photos.html" style="font-size:13px !important">Tour / Vacation Photos</a>
+                                </li>  
+								<li><a href="commingsoon.html" style="font-size:13px !important">Add Specialities</a>
+                                </li> 
+								<li><a href="commingsoon.html" style="font-size:13px !important">Review/Ratings</a>
+                                </li>
+                            </ul>
+                        <span class="slimmenu-sub-collapser"><i class="fa fa-angle-down"></i></span>
+						</li>
                         
                         <li><a href="defaulthotelsearch.html">Hotels</a>
                             
                         </li>
-                        <li><a href="commingsoon.html">Trip Planner</a>
+                        <li><a href="#">Trip Planner</a>
                             
                         </li>
                         <li><a href="#">Directories</a>
                            <ul>
-                               <li><a href="commingsoon.html" style="font-size:13px !important">Travel Agent</a>
+                               <li><a href="#" style="font-size:13px !important">Travel Agent</a>
                                 </li>
 								 <li><a href="defaultagencysearch.html" style="font-size:13px !important">Travel Agencies</a>
                                 </li>
-                                 <li><a href="defaultvacationsearch.html" style="font-size:13px !important">Vocation homes</a>
+                                 <li><a href="#" style="font-size:13px !important">Vocation homes</a>
                                 </li>
-								<li><a href="defaultlimocompanies.html"  style="font-size:13px !important">Limo Companies</a>
+								<li><a href="#"  style="font-size:13px !important">Limo Companies</a>
                                 </li>
-								<li><a href="commingsoon.html" style="font-size:13px !important" >Caretakers</a>
+								<li><a href="#" style="font-size:13px !important" >Caretakers</a>
                                 </li>
                             </ul>
                         </li>
-                        <li><a href="commingsoon.html">Stores</a>
+                        <li><a href="#">Stores</a>
                            
                         </li>
 						
-                          <li><a href="commingsoon.html">Blog & Reviews</a></li>
+                        <li><a href="blog-abletraveler.html"><span><i class="fa fa-rss"></i></span> &nbsp;Blog</a></li>
 						<li><a href="contact-us.html">Contact US</a>
                             
                         </li>
@@ -111,21 +129,54 @@
             </div>
         </header>
 
-        <!-- TOP AREA -->
-        <div class="top-area show-onload">
+         <div class="top-area show-onload">
             <div class="bg-holder full">
-                <div class="bg-mask"></div>
-                <div class="bg-parallax" style="background-image: url(http://remtsoy.com/tf_templates/traveler/demo_v1_7/img/196_365_2048x1365.jpg); background-position: 50% 0px;"></div>
-                <div class="bg-content">
-                    
+                <div class="bg-front full-height bg-front-mob-rel">
+                    <div class="container full-height">
+                        <div class="rel full-height">
+                            <div class="tagline visible-lg" id="tagline" style="top: 25%  !important;left: 15% !important;"><span>It's time to</span>
+                                <ul>
+                                    <li class="">relax</li>
+                                    <li class="">Plan For a Trip</li>
+                                    <li class="">For Best</li>
+                                    <li class="">Top Destinations</li>
+                                    <li class="">have fun</li>
+                                    <li class="">go</li>
+                                    <li class="active">live</li>
+                                    <li class="">able Traveller</li>
+                                    <li class="">search away</li>
+                                    <li class="">for Best Hotels</li>
+                                </ul>
+                            </div>
+                           
+                        </div>
+                    </div>
                 </div>
+                <div class="owl-carousel owl-slider owl-carousel-area visible-lg" id="owl-carousel-slider" data-nav="false">
+                    <div class="bg-holder full">
+                        <div class="bg-mask"></div>
+                        <div class="bg-img" style="background-image:url(img/196_365_2048x1365.jpg);"></div>
+                    </div>
+                    <div class="bg-holder full">
+                        <div class="bg-mask"></div>
+                        <div class="bg-img" style="background-image:url(img/el_inevitable_paso_del_tiempo_2048x2048.jpg);"></div>
+                    </div>
+                    <div class="bg-holder full">
+                        <div class="bg-mask"></div>
+                        <div class="bg-img" style="background-image:url(img/viva_las_vegas_2048x1365.jpg);"></div>
+                    </div>
+                </div>
+                <div class="bg-img hidden-lg" style="background-image:url(img/2048x1365.png);"></div>
+                <div class="bg-mask hidden-lg"></div>
             </div>
         </div>
         <!-- END TOP AREA  -->
 
         <div class="gap"></div>
 
-        <div class="container">
+
+        
+         <div class="container">
             <div class="row">
                 <div class="col-md-4">
                     <aside class="sidebar-left">
@@ -290,139 +341,156 @@
                 </div>
                 <div class="col-md-8">
                     <!-- START BLOG POST -->
-                    <div class="article post">
-                        <header class="post-header">
-                            <a class="hover-img" href="#">
-                                <img src="img/1200x500.png" alt="Image Alternative text" title="196_365" /><i class="fa fa-link box-icon-# hover-icon round"></i>
-                            </a>
-                        </header>
-                        <div class="post-inner">
-                            <h4 class="post-title"><a class="text-darken" href="#">Image Post Type</a></h4>
-                            <ul class="post-meta">
-                                <li><i class="fa fa-calendar"></i><a href="#">17 October, 2014</a>
-                                </li>
-                                <li><i class="fa fa-user"></i><a href="#">Carol Blevins</a>
-                                </li>
-                                <li><i class="fa fa-tags"></i><a href="#">Web</a>, <a href="#">Design</a>
-                                </li>
-                                <li><i class="fa fa-comments"></i><a href="#">11 Comments</a>
-                                </li>
-                            </ul>
-                            <p class="post-desciption">Ornare euismod nec est justo massa gravida fames vulputate auctor egestas ante suscipit augue lacinia gravida velit conubia pharetra mollis risus facilisis dignissim lobortis euismod dolor placerat maecenas vel ultrices id lacus proin ante vulputate ornare congue placerat quam vivamus ante lacinia hendrerit rhoncus ad habitasse ante taciti vivamus auctor</p><a class="btn btn-small btn-primary" href="#">Read More</a>
-                        </div>
-                    </div>
-                    <!-- END BLOG POST -->
-                    <!-- START BLOG POST -->
-                    <div class="article post">
-                        <header class="post-header">
-                            <blockquote>Est amet ultrices ipsum quam natoque cum pellentesque potenti phasellus aenean egestas iaculis duis mi porta litora mi conubia dictum</blockquote>
-                        </header>
-                        <div class="post-inner">
-                            <h4 class="post-title"><a class="text-darken" href="#">Quoute Post Type</a></h4>
-                            <ul class="post-meta">
-                                <li><i class="fa fa-calendar"></i><a href="#">15 October, 2014</a>
-                                </li>
-                                <li><i class="fa fa-user"></i><a href="#">Brandon Burgess</a>
-                                </li>
-                                <li><i class="fa fa-tags"></i><a href="#">Lifestyle</a>, <a href="#">Web</a>
-                                </li>
-                                <li><i class="fa fa-comments"></i><a href="#">10 Comments</a>
-                                </li>
-                            </ul>
-                            <p class="post-desciption">Dictumst libero rutrum erat est fusce vestibulum aliquam ultricies adipiscing parturient class tempor suspendisse facilisis molestie gravida phasellus tincidunt vel aliquet sociosqu tempor laoreet dignissim diam elementum neque massa aliquam leo maecenas duis enim litora pulvinar aliquam dictumst quis laoreet diam per facilisis cursus hac ante mus aenean sem dapibus</p><a class="btn btn-small btn-primary" href="#">Read More</a>
-                        </div>
-                    </div>
-                    <!-- END BLOG POST -->
-                    <!-- START BLOG POST -->
-                    <div class="article post">
-                        <header class="post-header">
-                            <div class="fotorama" data-allowfullscreen="true">
-                                <img src="img/1200x500.png" alt="Image Alternative text" title="196_365" />
-                                <img src="img/1200x500.png" alt="Image Alternative text" title="196_365" />
-                                <img src="img/1200x500.png" alt="Image Alternative text" title="196_365" />
-                            </div>
-                        </header>
-                        <div class="post-inner">
-                            <h4 class="post-title"><a class="text-darken" href="#">Slider Post Type</a></h4>
-                            <ul class="post-meta">
-                                <li><i class="fa fa-calendar"></i><a href="#">04 October, 2014</a>
-                                </li>
-                                <li><i class="fa fa-user"></i><a href="#">Neil Davidson</a>
-                                </li>
-                                <li><i class="fa fa-tags"></i><a href="#">Web</a>
-                                </li>
-                                <li><i class="fa fa-comments"></i><a href="#">12 Comments</a>
-                                </li>
-                            </ul>
-                            <p class="post-desciption">Vulputate pellentesque fermentum eu dolor volutpat laoreet dui eu luctus egestas cursus posuere egestas tristique vivamus lectus senectus dictumst a velit hac facilisi bibendum duis laoreet vel mus porta cum himenaeos est hac augue et nascetur phasellus feugiat tempor facilisi nulla magna tortor sagittis parturient pellentesque mus tristique purus lacinia</p><a class="btn btn-small btn-primary" href="#">Read More</a>
-                        </div>
-                    </div>
-                    <!-- END BLOG POST -->
-                    <!-- START BLOG POST -->
-                   
-                    <!-- END BLOG POST -->
-                    <!-- START BLOG POST -->
-                   
-                    <!-- END BLOG POST -->
-                    <!-- START BLOG POST -->
-                    <div class="article post">
-                        <header class="post-header">
-                            <iframe src="http://player.vimeo.com/video/103721959" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
-                        </header>
-                        <div class="post-inner">
-                            <h4 class="post-title"><a class="text-darken" href="#">Vimeo Post Type</a></h4>
-                            <ul class="post-meta">
-                                <li><i class="fa fa-calendar"></i><a href="#">27 June, 2014</a>
-                                </li>
-                                <li><i class="fa fa-user"></i><a href="#">Richard Jones</a>
-                                </li>
-                                <li><i class="fa fa-tags"></i><a href="#">Travel</a>, <a href="#">Design</a>, <a href="#">Typography</a>
-                                </li>
-                                <li><i class="fa fa-comments"></i><a href="#">16 Comments</a>
-                                </li>
-                            </ul>
-                            <p class="post-desciption">Sagittis fusce malesuada porttitor blandit odio elit hac in lacus lacinia magnis laoreet aptent massa dolor lacus hac litora at class placerat quisque dictumst orci tempor himenaeos curae sed etiam quisque auctor sagittis primis tortor metus felis nec enim nisl nostra per sagittis ullamcorper imperdiet fusce viverra mollis taciti lectus</p><a class="btn btn-small btn-primary" href="#">Read More</a>
-                        </div>
-                    </div>
-                    <!-- END BLOG POST -->
-                    <!-- START BLOG POST -->
-                   <!--  <div class="article post">
-                        <header class="post-header">
-                            <iframe width="100%" height="150" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/150793348&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=false"></iframe>
-                        </header>
-                        <div class="post-inner">
-                            <h4 class="post-title"><a class="text-darken" href="#">Audio Post Type</a></h4>
-                            <ul class="post-meta">
-                                <li><i class="fa fa-calendar"></i><a href="#">11 March, 2014</a>
-                                </li>
-                                <li><i class="fa fa-user"></i><a href="#">Joseph Hudson</a>
-                                </li>
-                                <li><i class="fa fa-tags"></i><a href="#">Travel</a>, <a href="#">Typography</a>, <a href="#">Lifestyle</a>
-                                </li>
-                                <li><i class="fa fa-comments"></i><a href="#">5 Comments</a>
-                                </li>
-                            </ul>
-                            <p class="post-desciption">Accumsan litora faucibus felis mi lacinia sociis commodo suscipit pulvinar ligula nibh litora malesuada ipsum orci felis facilisi interdum neque torquent egestas pharetra est cum tellus ultrices aliquam nam gravida hendrerit primis class egestas primis porta egestas non eleifend risus turpis commodo nisi felis nullam risus aliquam curae fusce elit</p><a class="btn btn-small btn-primary" href="#">Read More</a>
-                        </div>
-                    </div> -->
-                    <!-- END BLOG POST -->
-                    <!-- START BLOG POST -->
-                    <div class="article post">
-                        <div class="post-inner">
-                            <h4 class="post-title"><a class="text-darken" href="#">Default Post Type</a></h4>
-                            <ul class="post-meta">
-                                <li><i class="fa fa-calendar"></i><a href="#">28 July, 2013</a>
-                                </li>
-                                <li><i class="fa fa-user"></i><a href="#">Leah Kerr</a>
-                                </li>
-                                <li><i class="fa fa-tags"></i><a href="#">Web</a>, <a href="#">Digital</a>
-                                </li>
-                                <li><i class="fa fa-comments"></i><a href="#">11 Comments</a>
-                                </li>
-                            </ul>
-                            <p class="post-desciption">A blandit aenean fusce eleifend hendrerit ac fringilla vehicula eget odio orci hac mauris tincidunt tellus dis nec eleifend commodo per enim orci urna malesuada tincidunt nec libero turpis fermentum accumsan est non tristique interdum ligula sit luctus purus nulla et imperdiet maecenas suspendisse diam lorem nisi quis elit augue</p><a class="btn btn-small btn-primary" href="#">Read More</a>
-                        </div>
-                    </div>
+                    
+                <h3>able Traveller Blog</h3>
+                        <div class="gap gap-small"></div>
+                        <ul class="booking-list">
+                            <li>
+                                <a class="booking-item">
+                                    <div class="row">
+                                       
+                                        <div class="col-md-8">
+                                            <h5 class="booking-item-title" style="font-weight:600 !important">MY 28 FAVORITE PLACES TO VISIT IN THE US</h5>
+                                            <p class="text-medium">From sea to shining sea, 
+											the United States is home to a diverse 
+											landscape — both culturally and physically. 
+											Spending months traveling across its vast 
+											landscape gave me a deep appreciation for all my 
+											country has to offer. After travelling 13,000 miles 
+											across the continental United States this spring 
+											Memphis appears like its best days are behind it, 
+											but don’t let the rough exterior fool you — the city 
+											is still home to some killer food and a vibrant blues 
+											music scene. Additionally, there’s Graceland (Elvis’s home)
+											for fans of the King, a big waterfront for walking, and the 
+											phenomenal, detailed, and moving Museum of Civil Rights 
+											(it’s huge, so don’t rush it!). I enjoyed the city more than
+											I expected and was disappointed when I had to leave. To use a cliché, it’s a hidden gem!
+											(and more, if you count my […]</p>
+                                            
+                                        </div>
+										 <div class="col-md-4">
+                                            <img src="img/bestus20.jpg" style="height:250px" alt="Image Alternative text" title="Bedroom Sunset Suite" />
+                                        </div>
+                                       
+                                    </div>
+									<div class="row">
+									<div class="col-md-9 mt20">
+									<span class="booking-item-title pull-left">July 16 , 2015<span style="color:#2DB5DD"> &nbsp;By NomadicMatt</span></span>
+										<span class="btn btn-primary pull-right">Read More..</span><div class="col-md-2"></div>
+									</div>
+									</div>
+                                </a>
+                            </li>
+                           
+                           <li>
+                                <a class="booking-item">
+                                    <div class="row">
+                                       
+                                        <div class="col-md-8">
+                                            <h5 class="booking-item-title" style="font-weight:600 !important">HOW TO SHOOT THE PERFECT TRAVEL PHOTOGRAPH</h5>
+                                            <p class="text-medium">Today, professional photographer Laurence Norah of Finding the Universe,
+											continues his five part series on taking better travel photos. 
+											Photographs are important for the memories they represent.
+											
+											In my first post in this series, I talked about the key compositional rules that you can use to create better travel photos. If you’re new to this series, I recommend you start there.
+
+Today I’ll be covering how to deal with challenging light and some introducing some advanced ideas for controlling your composition, including being selective with your focus and making objects seem closer together than they are.
+
+Then I’m going to get into specific tips for common travel scenes to get you taking better photos faster.
+
+I’ll begin, though, by talking about the most crucial element of photography — the light. Here’s a shot from where I grew 
+up and first got into photography, the Seychelles Islands, taken at one of my favorite times of day for shooting — sunset!
+											You look at a picture and it conjures up thoughts, feelings,
+											and smells that take you back to a long forgotten place so Laurence is here to help […]</p>
+                                            
+                                        </div>
+										 <div class="col-md-4">
+                                            <img src="img/laurencephoto07.jpg" style="height:250px" alt="Image Alternative text" title="Bedroom Sunset Suite" />
+                                        </div>
+                                       
+                                    </div>
+									<div class="row">
+									<div class="col-md-9 mt20">
+									<span class="booking-item-title pull-left">July 16 , 2015<span style="color:#2DB5DD"> &nbsp;By NomadicMatt</span></span>
+										<span class="btn btn-primary pull-right">Read More..</span><div class="col-md-2"></div>
+									</div>
+									</div>
+                                </a>
+                            </li>
+							<li>
+                                <a class="booking-item">
+                                    <div class="row">
+                                       
+                                        <div class="col-md-8">
+                                            <h5 class="booking-item-title" style="font-weight:600 !important">9 THINGS I LEARNED WHILE DRIVING ACROSS THE UNITED STATES</h5>
+                                            <p class="text-medium">After 12,000 miles and four and a half months on the road,
+											I’m home. My epic book tour across the country is over, and I fell in love with 
+											the United States all over again.
+											You don’t realize just how big it is 
+											until you spend ten hours driving through one state.
+											I spent three days driving over 1,500 miles and only crossed 
+											two and half states (Montana, Wyoming, and Nebraska). 
+											A road trip across the United States isn’t quick.
+											Like Australia, Canada, or India, if you want to see
+											a lot, you need to devote considerable time to it. 
+											The vastness of the country is also overwhelming 
+											and profoundly inspiring. The possibilities of 
+											discovery seem endless in this large land.
+											I think the United States is an underrated destination. 
+											Travel across the United States feels more like visiting a collection […]</p>
+                                            
+                                        </div>
+										 <div class="col-md-4">
+                                            <img src="img/uslessons1-335x200.jpg" style="height:250px" alt="Image Alternative text" title="Bedroom Sunset Suite" />
+                                        </div>
+                                       
+                                    </div>
+									<div class="row">
+									<div class="col-md-9 mt20">
+									<span class="booking-item-title pull-left">July 16 , 2015<span style="color:#2DB5DD"> &nbsp;By NomadicMatt</span></span>
+										<span class="btn btn-primary pull-right">Read More..</span><div class="col-md-2"></div>
+									</div>
+									</div>
+                                </a>
+                            </li>
+							<li>
+                                <a class="booking-item">
+                                    <div class="row">
+                                       
+                                        <div class="col-md-8">
+                                            <h5 class="booking-item-title" style="font-weight:600 !important">HOW TO PACK A PROFESSIONAL TRAVEL FIRST AID KIT</h5>
+                                            <p class="text-medium">I get a lot of questions about health care on the road. 
+											How can I avoid getting sick? What do you do about vaccines? What happens
+											when I do get sick? Since I’m not a doctor, I don’t like giving medical 
+											advice beyond a few general tips so I’ve asked Mike Huxley,
+                                             HOW TO PACK A PROFESSIONAL TRAVEL FIRST AID KIT
+											first aid kit for traveling around the world
+											I get a lot of questions about health care on the road.
+											 How can I avoid getting sick? What do you do about vaccines? 
+											What happens when I do get sick? Since I’m not a doctor, 
+											I don’t like giving medical advice beyond a few general 
+											tips so I’ve asked Mike Huxley, a registered nurse and 
+											author of the blog Bemused Backpacker to pen a
+											 few articles on health and safety on the road.
+											 This is the first in a series on the subject.	 […]</p>
+                                            
+                                        </div>
+										 <div class="col-md-4">
+                                            <img src="img/First-aid-photo-335x200.jpg" style="height:250px" alt="Image Alternative text" title="Bedroom Sunset Suite" />
+                                        </div>
+                                       
+                                    </div>
+									<div class="row">
+									<div class="col-md-9 mt20">
+									<span class="booking-item-title pull-left">July 16 , 2015<span style="color:#2DB5DD"> &nbsp;By NomadicMatt</span></span>
+										<span class="btn btn-primary pull-right">Read More..</span><div class="col-md-2"></div>
+									</div>
+									</div>
+                                </a>
+                            </li>
+                        </ul>
+                    
                     <!-- END BLOG POST -->
                     <ul class="pagination">
                         <li class="active"><a href="#">1</a>
@@ -435,24 +503,22 @@
                         </li>
                         <li><a href="#">5</a>
                         </li>
-                        <li><a href="#">6</a>
-                        </li>
-                        <li><a href="#">7</a>
-                        </li>
                         <li class="dots">...</li>
-                        <li><a href="#">43</a>
+                        <li><a href="#">10</a>
                         </li>
                         <li class="next"><a href="#">Next Page</a>
                         </li>
                     </ul>
                 </div>
             </div>
+			
+			
         </div>
 
 
 
-
-        <footer id="main-footer">
+        <div class="gap"></div>
+       <footer id="main-footer">
             <div class="container">
                 <div class="row row-wrap">
                     <div class="col-md-3">
@@ -510,7 +576,7 @@
                     <div class="col-md-4">
                         <h4>Have Questions?</h4>
                         <h4 class="text-color">+1-202-555-0173</h4>
-                        <h4><a href="#" class="text-color">support@abletraveler.com</a></h4>
+                        <h4><a href="#" class="text-color">support@Abletraveler.com</a></h4>
                         <p>24/7 Dedicated Customer Support</p>
                     </div>
 
@@ -539,9 +605,21 @@
         <script src="js/gridrotator.js"></script>
         <script src="js/custom.js"></script>
     </div>
-	
-	
-	
+	<script>
+	  $(function(){
+    $(".dropdown").hover(            
+            function() {
+                $('.dropdown-menu', this).stop( true, true ).fadeIn("fast");
+                $(this).toggleClass('open');
+                $('b', this).toggleClass("caret caret-up");                
+            },
+            function() {
+                $('.dropdown-menu', this).stop( true, true ).fadeOut("fast");
+                $(this).toggleClass('open');
+                $('b', this).toggleClass("caret caret-up");                
+            });
+    });
+	</script>
 </body>
 
 </html>
