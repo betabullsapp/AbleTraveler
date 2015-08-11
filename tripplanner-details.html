@@ -1,0 +1,740 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>ableTraveler</title>
+
+
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+    <meta name="keywords" content="Template, html, premium, themeforest" />
+    <meta name="description" content="Traveler - Premium template for travel companies">
+    <meta name="author" content="Tsoy">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- GOOGLE FONTS -->
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,600' rel='stylesheet' type='text/css'>
+    <!-- /GOOGLE FONTS -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/mystyles.css">
+
+    <script src="js/modernizr.js"></script>
+
+
+</head>
+
+<body>
+
+    <!-- FACEBOOK WIDGET -->
+    <div id="fb-root"></div>
+    <script>
+        (function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s);
+            js.id = id;
+            js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.0";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    </script>
+    <!-- /FACEBOOK WIDGET -->
+    <div class="global-wrap">
+        <header id="main-header">
+            <div class="header-top">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <a class="logo" href="index.html">
+                                <img src="img/logo-invert.png" alt="Image Alternative text" title="Image Title" />
+                            </a>
+                        </div>
+                        <div class="col-md-3 col-md-offset-2">
+                           
+                        </div>
+                         <div class="col-md-4">
+                            <div class="top-user-area clearfix">
+                                <ul class="top-user-area-list list list-horizontal list-border ">
+                                    <li class="top-user-area-avatar dropdown">
+                                       <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                            <img class="origin round" src="img/amaze_40x40.jpg" alt="Image Alternative text" title="AMaze" />John</a>
+											&nbsp;<span style="color:white;cursor:pointer">(user)</span><b class="caret"></b>
+											<ul class="dropdown-menu">
+										<li><a href="user-profile.html"><i class="fa fa-user"></i> &nbsp;My profile</a></li>
+										<li><a href="changepassword.html"><i class="fa fa-key fa-fw"></i> &nbsp;Change Password</a></li>
+										<li class="divider"></li>
+										<li><a href="login.html"><i class="fa fa-sign-out"></i> &nbsp;Sign Out</a></li>
+									  </ul>
+                                    </li>
+                                   <!--  <li><a href="login.html">Sign Out</a>
+                                    </li> -->
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="nav">
+                    <ul class="slimmenu" id="slimmenu">
+                        <li ><a href="dashboard.html">Home</a>
+                            
+                        </li>
+                       
+                        
+                        <li><a href="defaulthotelsearch.html">Hotels</a>
+                            
+                        </li>
+                         <li class="active"><a href="tripplanner.html">Trip Planner</a>
+                            
+                        </li>
+                        <li class="active"><a href="#">Directories</a>
+                           <ul>
+                               <li><a href="commingsoon.html" style="font-size:13px !important">Travel Agent</a>
+                                </li>
+								 <li><a href="defaultagencysearch.html" style="font-size:13px !important">Travel Agencies</a>
+                                </li>
+                                 <li><a href="defaultvacationsearch.html" style="font-size:13px !important">Vocation homes</a>
+                                </li>
+								<li><a href="defaultlimocompanies.html"  style="font-size:13px !important">Limo Companies</a>
+                                </li>
+								<li><a href="commingsoon.html" style="font-size:13px !important" >Caretakers</a>
+                                </li>
+                            </ul>
+                        </li>
+                       <li><a href="store.html">Store</a>
+                           
+                        </li>
+						
+                          <li><a href="blog-abletraveler.html"><span><i class="fa fa-rss"></i></span> &nbsp;Blog</a></li>
+						<li><a href="contact-us.html">Contact US</a>
+                            
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+
+
+
+
+        <div class="container">
+          
+            <div class="booking-item-details">
+                <header class="booking-item-header" style="border:0px solid !important">
+				 <div class="">
+                <h3>Plan for Prefect trip</h3>
+               
+												<div class="input-daterange" data-date-format="M d, D">
+												<div class="row">
+                                                            <div class="col-md-5">
+                                                    <div class="form-group form-group-lg form-group-icon-left"><i class="fa fa-map-marker input-icon"></i>
+                                                        <label>Where do you want to go?</label>
+                                                        <input class="typeahead form-control" placeholder="Start Location" value="Golden Gate Bridge" id="start" type="text" />
+                                                    </div>
+													</div>
+													<div class="col-md-4">
+                                                    <div class="form-group form-group-lg form-group-icon-left"><i class="fa fa-map-marker input-icon"></i>
+                                                        <label>Destination</label>
+                                                                    <input class=" form-control" placeholder="Destination" value="Pulgas Water Temple" id="end" type="text" />
+                                                    </div>
+													</div>
+													<button class="btn btn-primary btn-md mt40" id="googlemap" onclick="calcRoute()" type="submit">Let's Plan a trip</button>
+													</div></div>
+                                                    
+                                                    
+                                                
+            </div> 
+                    <div class="row mt20">
+                        <div class="col-md-9">
+                            <h3 class="lh1em">Golden Gate Bridge</h3>
+                            <!-- <p class="lh1em text-small"><i class="fa fa-home"></i> 
+										6 BR, 6 BA, 1 HF, Sleeps 18 </p> -->
+                            <ul class="list list-inline text-small">
+                                <li><a href="#"><i class="fa fa-envelope"></i> able Traveler E-mail</a>
+                                </li>
+                                <li><a href="#"><i class="fa fa-home"></i> able Traveler Website</a>
+                                </li>
+                                <li><i class="fa fa-phone"></i> +1 (163) 493-1463</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-3">
+                            <!-- <p class="booking-item-header-price"><small>price from</small>  <span class="text-lg">$350</span>/night</p> -->
+                        </div>
+                    </div>
+                </header>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="tabbable booking-details-tabbable">
+                            <ul class="nav nav-tabs" id="myTab">
+							<li class="active"><a href="#google-map-tab" data-toggle="tab"><i class="fa fa-map-marker"></i>On the Map</a>
+                                </li>
+                                <li ><a href="#tab-1" data-toggle="tab"><i class="fa fa-camera"></i>Photos</a>
+                                </li> 
+                                
+                            </ul>
+                            <div class="tab-content">
+                                <div class="tab-pane fade " id="tab-1">
+                                    <div class="fotorama" data-allowfullscreen="true" data-nav="thumbs">
+                                        <img src="img/NewsYearsEveSunrise2012.jpg" style="height:500px" alt="Image Alternative text" title="Golden Bridge" />
+                                       
+                                        
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade in active" id="google-map-tab">
+                                    <div id="map-canvas" style="width:100%; height:500px;"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="booking-item-meta">
+                            <h2 class="lh1em mt40">Exeptional!</h2>
+                            
+                            <div class="booking-item-rating">
+                                <ul class="icon-list icon-group booking-item-rating-stars">
+								<h4 class="lh1em">Traveler rating</h4>
+                                    <li><i class="fa fa-star"></i>
+                                    </li>
+                                    <li><i class="fa fa-star"></i>
+                                    </li>
+                                    <li><i class="fa fa-star"></i>
+                                    </li>
+                                    <li><i class="fa fa-star"></i>
+                                    </li>
+                                    <li><i class="fa fa-star"></i>
+                                    </li>
+                                </ul><span class="booking-item-rating-number"><b >4.7</b> of 5 <small class="text-smaller">guest rating</small></span>
+                                <p><a class="text-default" href="#">based on 1535 reviews</a>
+                                </p>
+								<span class="btn btn-primary btn-md " href="vacation-payment.html"><i class="fa fa-star"></i>Add to your Fav Trip</span>
+                            </div>
+                        </div>
+                        <div class="row">
+						<div class="col-md-8 ml30">
+						<div id="directions-panel"  ></div>
+						
+										
+                          </div>
+						  
+                        </div>
+                        <!-- <a href="#" class="btn btn-primary">Write a Review</a> -->
+                    </div>
+                </div>
+                <div class="gap"></div>
+                <h3>Attractions on the way</h3>
+                <div class="row">
+                    <div class="col-md-9">
+                        
+                       
+                        <ul class="booking-list">
+                            <li>
+                                <a class="booking-item">
+                                    <div class="row">
+                                        <div class="col-md-3">
+                                            <img src="img/attraction2.jpg" alt="Image Alternative text" title="Pulgas Water Temple" />
+                                        </div>
+                                        <div class="col-md-8">
+                                            <h5 class="booking-item-title"><b>Pulgas Water Temple</b></h5>
+											<p class="booking-item-address">
+										<i class="fa fa-map-marker"></i> Canada Road Redwood City,CA </p>
+										<p class="booking-item-address"> --2 miles away from starting location</p>
+										  <!-- 25 miles -->
+                                            <p class="text-small"> The Pulgas Water Temple was erected by the San Francisco Water Department in 1934 at the point where the Hetch Hetchy Aqueduct enters Crystal Springs reservoir. In 1938, the original water temple was replaced with the current design.</p>
+                                           
+                                        </div>
+                                       
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="booking-item">
+                                    <div class="row">
+                                        <div class="col-md-3">
+                                            <img src="img/attraction5.jpg" alt="Image Alternative text" title="Alcatraz" />
+                                        </div>
+                                        <div class="col-md-8">
+                                            <h5 class="booking-item-title">Alcatraz</h5>
+											<p class="booking-item-address">
+										<i class="fa fa-map-marker"></i> San Francisco, CA</p>
+										<p class="booking-item-address"> --3 miles away from starting location</p>
+                                            <p class="text-small">Alcatraz: Wreathed in mystery, the often fog-shrouded island of Alcatraz lies in the heart of San Francisco Bay, a scant mile and a quarter from the sights and sounds of downtown. The site of the first lighthouse on the west coast, in operation since 1854, “The Rock” has since been used as an army fortress and a jail.</p>
+                                           
+                                        </div>
+                                        
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="booking-item">
+                                    <div class="row">
+                                        <div class="col-md-3">
+                                            <img src="img/attraction6.jpg" alt="Image Alternative text" title="Chinatown" />
+                                        </div>
+                                        <div class="col-md-8">
+                                            <h5 class="booking-item-title">Chinatown</h5>
+											<p class="booking-item-address">
+										<i class="fa fa-map-marker"></i> San Francisco Bay Area, CA</p>
+										<p class="booking-item-address"> --4 miles away from starting location</p>
+                                            <p class="text-small">Just a few short blocks from Union Square you enter beneath the dragon arch (at the corner of Bush Street and Grant Avenue) into another world with street signs in Chinese characters, tiny grocery stores displaying Chinese vegetables and delicacies, apothecary shops selling unusual remedies, spicy aromas drifting from colorful restaurants, older women bustling about, and the surrounding hum of unfamiliar phrases.</p>
+                                            
+                                        </div>
+                                        
+                                    </div>
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a class="booking-item">
+                                    <div class="row">
+                                        <div class="col-md-3">
+                                            <img src="img/attraction8.jpg" alt="Image Alternative text" title="Rose Garden" />
+                                        </div>
+                                        <div class="col-md-8">
+                                            <h5 class="booking-item-title">Rose Garden</h5>
+											
+											<p class="booking-item-address">
+										<i class="fa fa-map-marker"></i> Fulton Avenue & John F. Kenned San Francisco, CA</p>
+										<p class="booking-item-address"> --3 miles away from starting location</p>
+                                            <p class="text-small">You can visit the Rose Garden with hundreds of species of roses in every color and where, for the price of an almond, you’ll have bluebirds eating our of your hand. the Rose Garden can be considered either the easternmost neighborhood of West San Jose, or the westernmost of the central neighborhoods.</p>
+                                           
+                                        </div>
+                                       
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                   
+                </div>
+				<div class="gap-small"></div>
+                <h3>Attractions at the destination</h3>
+                <div class="row">
+                    <div class="col-md-9">
+                        
+                       
+                        <ul class="booking-list">
+                            <li>
+                                <a class="booking-item">
+                                    <div class="row">
+                                        <div class="col-md-3">
+                                            <img src="img/attraction10.jpg" alt="Image Alternative text" title="Museum of Modern Art" />
+                                        </div>
+                                        <div class="col-md-8">
+                                            <h5 class="booking-item-title"><b>Museum of Modern Art</b></h5>
+											<p class="booking-item-address">
+										<i class="fa fa-map-marker"></i> 151 Third Street San Francisco, CA</p>
+										<p class="booking-item-address"> --25km away from starting location</p>
+										  <!-- 25 miles -->
+                                            <p class="text-small"> A cylindrical, striped turret rising from blocks of red bricks gives a hint of what lies within the Museum of Modern Art (MOMA) at 151 Third Street. To help you appreciate the exhibits, an audio-cassette can be rented in the lobby to guide you through the museum’s permanent collection of abstract expressionistic paintings and avant-garde photography.</p>
+                                           
+                                        </div>
+                                       
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="booking-item">
+                                    <div class="row">
+                                        <div class="col-md-3">
+                                            <img src="img/attraction9.jpg" alt="Image Alternative text" title="San Francisco City Hall" />
+                                        </div>
+                                        <div class="col-md-8">
+                                            <h5 class="booking-item-title">San Francisco City Hall</h5>
+											<p class="booking-item-address">
+										<i class="fa fa-map-marker"></i> 400 Van Ness Avenue San Francisco,CA</p>
+										<p class="booking-item-address"> --25km away from starting location</p>
+                                            <p class="text-small">It’s worth taking a peek inside San Francisco’s City Hall to see its beautiful dome which is the fifth largest in the world. This Beaux Arts monument opened its doors in 1915 replacing an earlier City Hall that was destroyed by the 1906 earthquake.</p>
+                                           
+                                        </div>
+                                        
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="booking-item">
+                                    <div class="row">
+                                        <div class="col-md-3">
+                                            <img src="img/attraction13.jpg" alt="Image Alternative text" title="Japanese Tea Garden" />
+                                        </div>
+                                        <div class="col-md-8">
+                                            <h5 class="booking-item-title">Japanese Tea Garden</h5>
+											<p class="booking-item-address">
+										<i class="fa fa-map-marker"></i>Golden Gate Park San Francisco, CA</p>
+										<p class="booking-item-address"> --25km away from starting location</p>
+                                            <p class="text-small">Wander through the traditional Japanese Tea Garden in Golden Gate Park and enjoy tea and cookies Japanese-style at the tea house.The oldest public Japanese garden in the United States, this complex of many paths, ponds and a teahouse features native Japanese and Chinese plants. The garden's 5 acres (2.0 ha) contain many sculptures and bridges.</p>
+                                            
+                                        </div>
+                                        
+                                    </div>
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a class="booking-item">
+                                    <div class="row">
+                                        <div class="col-md-3">
+                                            <img src="img/attraction12.jpg" alt="Image Alternative text" title="Lombard Street" />
+                                        </div>
+                                        <div class="col-md-8">
+                                            <h5 class="booking-item-title">Lombard Street</h5>
+											
+											<p class="booking-item-address">
+										<i class="fa fa-map-marker"></i> Lombard Street Hyde & Leavenworth ,San Francisco</p>
+										<p class="booking-item-address"> --25km away from starting location</p>
+                                            <p class="text-small">You can visit the Rose Garden with hundreds of species of roses in every color and where, for the price of an almond, you’ll have bluebirds eating our of your hand. the Rose Garden can be considered either the easternmost neighborhood of West San Jose, or the westernmost of the central neighborhoods.</p>
+                                           
+                                        </div>
+                                       
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                   
+                </div>
+                <h3 class="mb20">Traveler Reviews</h3>
+                <div class="row row-wrap">
+                    <div class="col-md-8">
+                        <ul class="booking-item-reviews list">
+                            <li>
+                                <div class="row">
+                                    <div class="col-md-2">
+                                        <div class="booking-item-review-person">
+                                            <a class="booking-item-review-person-avatar round" href="#">
+                                                <img src="img/good_job_70x70.jpg" alt="Image Alternative text" title="Afro" />
+                                            </a>
+                                            <p class="booking-item-review-person-name"><a href="#">John Doe</a>
+                                            </p>
+                                            <p class="booking-item-review-person-loc">San Francisco,CA</p><small><a href="#">143 Reviews</a></small>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-10">
+                                        <div class="booking-item-review-content">
+                                            <h5>“Rose Garden”</h5>
+                                            <ul class="icon-group booking-item-rating-stars">
+                                                <li><i class="fa fa-star"></i>
+                                                </li>
+                                                <li><i class="fa fa-star"></i>
+                                                </li>
+                                                <li><i class="fa fa-star"></i>
+                                                </li>
+                                                <li><i class="fa fa-star"></i>
+                                                </li>
+                                                <li><i class="fa fa-star"></i>
+                                                </li>
+                                            </ul>
+                                            <p>visit the Rose Garden with hundreds of species of roses in every color and where, for the price of an almond, you’ll have bluebirds eating our of your hand. the Rose Garden can be considered either the easternmost neighborhood of West San Jose, or the westernmost of the central neighborhoods. </p>
+                                            <div class="booking-item-review-more-content">
+                                               <p class="text-small mt20"></p>
+                                                
+                                            </div>
+                                            
+                                            <p class="booking-item-review-rate">Was this review helpful?
+                                                <a class="fa fa-thumbs-o-up box-icon-inline round" href="#"></a><b class="text-color"> 7</b>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="row">
+                                    <div class="col-md-2">
+                                        <div class="booking-item-review-person">
+                                            <a class="booking-item-review-person-avatar round" href="#">
+                                                <img src="img/gamer_chick_70x70.jpg" alt="Image Alternative text" title="Bubbles" />
+                                            </a>
+                                            <p class="booking-item-review-person-name"><a href="#">Minnie Aviles</a>
+                                            </p>
+                                            <p class="booking-item-review-person-loc">San Francisco,CA</p><small><a href="#">128 Reviews</a></small>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-10">
+                                        <div class="booking-item-review-content">
+                                            <h5>“Museum of Modern Art”</h5>
+                                            <ul class="icon-group booking-item-rating-stars">
+                                                <li><i class="fa fa-star"></i>
+                                                </li>
+                                                <li><i class="fa fa-star"></i>
+                                                </li>
+                                                <li><i class="fa fa-star"></i>
+                                                </li>
+                                                <li><i class="fa fa-star"></i>
+                                                </li>
+                                                <li><i class="fa fa-star"></i>
+                                                </li>
+                                            </ul>
+                                            <p>Everything about the Museum Art is amazing. To help you appreciate the exhibits, an audio-cassette can be rented in the lobby to guide you through the museum’s permanent collection of abstract expressionistic paintings and avant-garde photography.
+                                            </p>
+                                            <div class="booking-item-review-more-content">
+                                                <p class="text-small mt20">Stayed March 2014, traveled as a couple</p>
+                                                
+                                            </div>
+                                           
+                                            <p class="booking-item-review-rate">Was this review helpful?
+                                                <a class="fa fa-thumbs-o-up box-icon-inline round" href="#"></a><b class="text-color"> 13</b>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="row wrap">
+                            <div class="col-md-5">
+                                <!-- <p><small>1108 reviews on this hotel. &nbsp;&nbsp;Showing 1 to 7</small>
+                                </p> -->
+                            </div>
+                            <div class="col-md-7">
+                                <ul class="pagination">
+                                    <li class="active"><a href="#">1</a>
+                                    </li>
+                                    <li><a href="#">2</a>
+                                    </li>
+                                    <li class="dots">...</li>
+                                    <li class="next"><a href="#" style="">Next Page</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="gap gap-small"></div>
+                       
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="gap gap-small"></div>
+        </div>
+
+
+
+      <footer id="main-footer">
+            <div class="container">
+                <div class="row row-wrap">
+                    <div class="col-md-3">
+                        <a class="logo" href="index.html">
+                            <img src="img/logo-invert.png" alt="Image Alternative text" title="Image Title" />
+                        </a>
+                        <p class="mb20">Booking, reviews and advices on hotels, resorts, vacation rentals, and lots more!</p>
+                        <ul class="list list-horizontal list-space">
+                            <li>
+                                <a class="fa fa-facebook box-icon-normal round animate-icon-bottom-to-top" href="#"></a>
+                            </li>
+                            <li>
+                                <a class="fa fa-twitter box-icon-normal round animate-icon-bottom-to-top" href="#"></a>
+                            </li>
+                            <li>
+                                <a class="fa fa-google-plus box-icon-normal round animate-icon-bottom-to-top" href="#"></a>
+                            </li>
+                            <li>
+                                <a class="fa fa-linkedin box-icon-normal round animate-icon-bottom-to-top" href="#"></a>
+                            </li>
+                            <li>
+                                <a class="fa fa-pinterest box-icon-normal round animate-icon-bottom-to-top" href="#"></a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="col-md-3">
+                        <h4>Newsletter</h4>
+                        <form>
+                            <label>Enter your E-mail Address</label>
+                            <input type="text" class="form-control">
+                            <p class="mt5"><small>*We Never Send Spam</small>
+                            </p>
+                            <input type="submit" class="btn btn-primary" value="Subscribe">
+                        </form>
+                    </div>
+                    <div class="col-md-2">
+                        <ul class="list list-footer">
+                            <li><a href="#">About US</a>
+                            </li>
+                            <li><a href="#">Best Hotels</a>
+                            </li>
+                            <li><a href="#">Best Price Guarantee</a>
+                            </li>
+                            <li><a href="#">Travel News</a>
+                            </li>
+                            <li><a href="#">Privacy Policy</a>
+                            </li>
+                            <li><a href="#">Terms of Use</a>
+                            </li>
+                            <li><a href="#">Feedback</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4">
+                        <h4>Have Questions?</h4>
+                        <h4 class="text-color">+1-202-555-0173</h4>
+                        <h4><a href="#" class="text-color">support@Abletraveler.com</a></h4>
+                        <p>24/7 Dedicated Customer Support</p>
+                    </div>
+
+                </div>
+            </div>
+        </footer>
+
+        <script src="js/jquery.js"></script>
+        <script src="js/bootstrap.js"></script>
+        <script src="js/slimmenu.js"></script>
+        <script src="js/bootstrap-datepicker.js"></script>
+        <script src="js/bootstrap-timepicker.js"></script>
+        <script src="js/nicescroll.js"></script>
+        <script src="js/typeahead.js"></script>
+        <script src="js/owl-carousel.js"></script>
+        <script src="js/custom.js"></script>
+    </div>
+	<script>
+	  $(function(){
+    $(".dropdown").hover(            
+            function() {
+                $('.dropdown-menu', this).stop( true, true ).fadeIn("fast");
+                $(this).toggleClass('open');
+                $('b', this).toggleClass("caret caret-up");                
+            },
+            function() {
+                $('.dropdown-menu', this).stop( true, true ).fadeOut("fast");
+                $(this).toggleClass('open');
+                $('b', this).toggleClass("caret caret-up");                
+            });
+    });
+	</script>
+	
+	<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&signed_in=true"></script>
+    <script>
+var directionsDisplay;
+var directionsService = new google.maps.DirectionsService();
+
+function initialize() {
+  directionsDisplay = new google.maps.DirectionsRenderer();
+  var mapOptions = {
+    zoom: 7,
+    center: new google.maps.LatLng(41.850033, -87.6500523)
+  };
+  var map = new google.maps.Map(document.getElementById('map-canvas'),
+      mapOptions);
+  directionsDisplay.setMap(map);
+  directionsDisplay.setPanel(document.getElementById('directions-panel'));
+
+  var control = document.getElementById('control');
+  control.style.display = 'block';
+  map.controls[google.maps.ControlPosition.TOP_CENTER].push(control);
+}
+
+function calcRoute() {
+  var start = document.getElementById('start').value;
+  var end = document.getElementById('end').value;
+  var request = {
+    origin: start,
+    destination: end,
+    travelMode: google.maps.TravelMode.DRIVING
+  };
+  directionsService.route(request, function(response, status) {
+    if (status == google.maps.DirectionsStatus.OK) {
+      directionsDisplay.setDirections(response);
+    }
+  });
+}
+
+google.maps.event.addDomListener(window, 'load', initialize);
+
+    </script>
+	   <style>
+     
+
+      #panel {
+        position: absolute;
+        top: 5px;
+        left: 50%;
+        margin-left: -180px;
+        z-index: 5;
+        background-color: #fff;
+        padding: 5px;
+        border: 1px solid #999;
+      }
+
+      /*
+      Provide the following styles for both ID and class,
+      where ID represents an actual existing "panel" with
+      JS bound to its name, and the class is just non-map
+      content that may already have a different ID with
+      JS bound to its name.
+      */
+
+      #panel, .panel {
+        font-family: 'Roboto','sans-serif';
+        line-height: 30px;
+        padding-left: 10px;
+      }
+
+      #panel select, #panel input, .panel select, .panel input {
+        font-size: 15px;
+      }
+
+      #panel select, .panel select {
+        width: 100%;
+      }
+
+      #panel i, .panel i {
+        font-size: 12px;
+      }
+
+    </style>
+    <style>
+      #directions-panel {
+        height: 288px;
+        float: right;
+        width: 390px;
+        overflow: auto;
+		
+      }
+
+      #map-canvas {
+        margin-right: 400px;
+      }
+
+      #control {
+        background: #fff;
+        padding: 5px;
+        font-size: 14px;
+        font-family: Arial;
+        border: 1px solid #ccc;
+        box-shadow: 0 2px 2px rgba(33, 33, 33, 0.4);
+        display: none;
+      }
+	  
+	  .adp, .adp table {
+  font-family: Roboto,Arial,sans-serif;
+  font-weight: 300;
+  color: #2c2c2c;
+  margin-top: 0% !important;
+}
+
+      @media print {
+        #map-canvas {
+          height: 500px;
+          margin: 0;
+        }
+
+        #directions-panel {
+          float: none;
+          width: auto;
+        }
+      }
+    </style>
+	
+	
+	
+	<script>
+
+$(document).ready(function(){
+    $("#googlemap").click(); 
+});
+</script>
+	
+</body>
+
+</html>
+
+
