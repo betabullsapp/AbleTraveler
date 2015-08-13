@@ -86,7 +86,7 @@
                         </li>
                         <li><a href="#">Directories</a>
                            <ul>
-                               <li><a href="commingsoon.html" style="font-size:13px !important">Travel Agent</a>
+                               <li><a href="defaultagentsearch.html" style="font-size:13px !important">Travel Agent</a>
                                 </li>
 								 <li><a href="defaultagencysearch.html" style="font-size:13px !important">Travel Agencies</a>
                                 </li>
@@ -128,13 +128,13 @@
                     <form>
                         <div class="form-group form-group-icon-left"><i class="fa fa-user input-icon input-icon-show"></i>
                             <label>Username or email</label>
-                            <input class="form-control" placeholder="e.g. betabulls@gmail.com" type="text" />
+                            <input class="form-control" placeholder="e.g. betabulls@gmail.com" type="text" id="uname" />
                         </div>
                         <div class="form-group form-group-icon-left"><i class="fa fa-lock input-icon input-icon-show"></i>
                             <label>Password</label>
                             <input class="form-control" type="password" placeholder="password" />
                         </div>
-                        <a class="btn btn-primary" href="dashboard.html" >Sign in </a>
+                        <a class="btn btn-primary"  id="sigm" >Sign in </a>
 					<a href="#" id="forpass" class="forget-password pull-right">Forgot Password?</a>
 						
                     </form>
@@ -271,9 +271,31 @@ $("#recovery").click(function()
 $('#login').show();
 })
 }); 
-		
+		$("#sigm").click(function()
+		{
+if($("#uname").val() == "user")
+{
+     window.location.href= "dashboard.html"
+}
+else if($("#uname").val() == "agent")
+{
+     window.location.href= "agentdashboard.html"
+}
+else
+{
+   $("#errormessage").html("please enter username to login..!");
+ $("#uname").focus();
+
+}
 
 
+
+$("#ID").Keypress(function()
+{
+    $("#errorMesaaage").html("");
+
+    })
+});
 </script>
 		
     </div>

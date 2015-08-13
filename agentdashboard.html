@@ -42,7 +42,7 @@
     </script>
     <!-- /FACEBOOK WIDGET -->
     <div class="global-wrap">
-       <header id="main-header">
+        <header id="main-header">
             <div class="header-top">
                 <div class="container">
                     <div class="row">
@@ -56,14 +56,20 @@
                         </div>
                         <div class="col-md-4">
                             <div class="top-user-area clearfix">
-                                <ul class="top-user-area-list list list-horizontal list-border">
-                                    <li class="top-user-area-avatar">
-                                        <a href="login.html">Sign In</a>
+                                <ul class="top-user-area-list list list-horizontal list-border ">
+                                    <li class="top-user-area-avatar dropdown">
+                                       <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                            <img class="origin round" src="img/amaze_40x40.jpg" alt="Image Alternative text" title="AMaze" />John</a>
+											&nbsp;<span style="color:white;cursor:pointer">(Agent)</span><b class="caret"></b>
+											<ul class="dropdown-menu">
+										<li><a href="#"><i class="fa fa-user"></i> &nbsp;My profile</a></li>
+										<li><a href="#"><i class="fa fa-key fa-fw"></i> &nbsp;Change Password</a></li>
+										<li class="divider"></li>
+										<li><a href="login.html"><i class="fa fa-sign-out"></i> &nbsp;Sign Out</a></li>
+									  </ul>
                                     </li>
-                                    <li><a href="register.html">Sign Up</a>
-                                    </li>
-                                   
-                                    
+                                   <!--  <li><a href="login.html">Sign Out</a>
+                                    </li> -->
                                 </ul>
                             </div>
                         </div>
@@ -73,36 +79,34 @@
             <div class="container">
                 <div class="nav">
                     <ul class="slimmenu" id="slimmenu">
-                        <li class="active"><a href="index.html">Home</a>
+                        <li class="active"><a href="dashboard.html">Home</a>
                             
                         </li>
-                       
                         
+                       
                         <li><a href="defaulthotelsearch.html">Hotels</a>
                             
-                        </li>
-                         <li><a href="tripplanner.html">Trip Planner</a>
+                       
                             
                         </li>
                         <li><a href="#">Directories</a>
                            <ul>
-                               <li><a href="defaultagentsearch.html" style="font-size:13px !important">Travel Agent</a>
+                               <li><a href="defaultagentsearch.html" class="layoutfont">Travel Agent</a>
                                 </li>
-								 <li><a href="defaultagencysearch.html" style="font-size:13px !important">Travel Agencies</a>
+								 <li><a href="defaultagencysearch.html" class="layoutfont">Travel Agencies</a>
                                 </li>
-                                 <li><a href="defaultvacationsearch.html" style="font-size:13px !important">Vocation homes</a>
+                                 <li><a href="defaultvacationsearch.html" class="layoutfont">Vocation homes</a>
                                 </li>
-								<li><a href="defaultlimocompanies.html"  style="font-size:13px !important">Limo Companies</a>
+								<li><a href="defaultlimocompanies.html"  class="layoutfont">Limo Companies</a>
                                 </li>
-								<li><a href="defaultcaretakersearch.html" style="font-size:13px !important" >Caretakers</a>
+								<li><a href="defaultcaretakersearch.html" class="layoutfont" >Caretakers</a>
                                 </li>
                             </ul>
                         </li>
-                       <li><a href="store.html">Store</a>
-                           
+                         <li><a href="store.html">Store</a>
+                            
                         </li>
-						
-                          <li><a href="blog-abletraveler.html"><span><i class="fa fa-rss"></i></span> &nbsp;Blog</a></li>
+                       <li><a href="blog-abletraveler.html"><span><i class="fa fa-rss"></i></span> &nbsp;Blog</a></li>
 						<li><a href="contact-us.html">Contact US</a>
                             
                         </li>
@@ -118,7 +122,7 @@
                 <div class="bg-parallax" style="background-image: url(http://remtsoy.com/tf_templates/traveler/demo_v1_7/img/196_365_2048x1365.jpg); background-position: 50% 0px;"></div>
                 <div class="bg-content">
                     <div class="container">
-                       <div class="row">
+                        <div class="row">
                             <div class="col-md-12">
 							
                                 <div class="search-tabs search-tabs-bg mt512">
@@ -458,7 +462,7 @@
                                                 </form>
                                             </div>
                                             <div class="tab-pane fade" id="tab-4">
-                                                <h2>Search for  Rental Cars</h2>
+                                                <h2>Search for Rental Cars</h2>
                                                 <form>
                                                     <div class="row">
                                                         <div class="col-md-6">
@@ -887,8 +891,6 @@
         </div>
 
 
-
-
         <footer id="main-footer">
             <div class="container">
                 <div class="row row-wrap">
@@ -976,8 +978,24 @@
         <script src="js/gridrotator.js"></script>
         <script src="js/custom.js"></script>
     </div>
+	<script>
+	  $(function(){
+    $(".dropdown").hover(            
+            function() {
+                $('.dropdown-menu', this).stop( true, true ).fadeIn("fast");
+                $(this).toggleClass('open');
+                $('b', this).toggleClass("caret caret-up");                
+            },
+            function() {
+                $('.dropdown-menu', this).stop( true, true ).fadeOut("fast");
+                $(this).toggleClass('open');
+                $('b', this).toggleClass("caret caret-up");                
+            });
+    });
+	</script>
+	<style>
 	
-	
+	</style>
 	
 </body>
 
