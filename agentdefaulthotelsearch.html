@@ -1,0 +1,767 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>ableTraveler</title>
+
+
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+    <meta name="keywords" content="Template, html, premium, themeforest" />
+    <meta name="description" content="Traveler - Premium template for travel companies">
+    <meta name="author" content="Tsoy">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- GOOGLE FONTS -->
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,600' rel='stylesheet' type='text/css'>
+    <!-- /GOOGLE FONTS -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/mystyles.css">
+    <script src="js/modernizr.js"></script>
+
+
+</head>
+
+<body>
+
+    <!-- FACEBOOK WIDGET -->
+    <div id="fb-root"></div>
+    <script>
+        (function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s);
+            js.id = id;
+            js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.0";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    </script>
+    <!-- /FACEBOOK WIDGET -->
+    <div class="global-wrap">
+       <header id="main-header">
+            <div class="header-top">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <a class="logo" href="index.html">
+                                <img src="img/logo-invert.png" alt="Image Alternative text" title="Image Title" />
+                            </a>
+                        </div>
+                        <div class="col-md-3 col-md-offset-2">
+                           
+                        </div>
+                         <div class="col-md-4">
+                            <div class="top-user-area clearfix">
+                                <ul class="top-user-area-list list list-horizontal list-border ">
+                                    <li class="top-user-area-avatar dropdown">
+                                       <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                            <img class="origin round" src="img/amaze_40x40.jpg" alt="Image Alternative text" title="AMaze" />John</a>
+											&nbsp;<span style="color:white;cursor:pointer">(Agent)</span><b class="caret"></b>
+											<ul class="dropdown-menu">
+										<li><a href="agent-profile.html"><i class="fa fa-user"></i> &nbsp;My profile</a></li>
+										<li><a href="agentchangepassword.html"><i class="fa fa-key fa-fw"></i> &nbsp;Change Password</a></li>
+										<li class="divider"></li>
+										<li><a href="login.html"><i class="fa fa-sign-out"></i> &nbsp;Sign Out</a></li>
+									  </ul>
+                                    </li>
+                                   <!--  <li><a href="login.html">Sign Out</a>
+                                    </li> -->
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="nav">
+                    <ul class="slimmenu" id="slimmenu">
+                        <li ><a href="agentdashboard.html">Home</a>
+                            
+                        </li>
+                        
+                        
+                        <li class="active"><a href="agentdefaulthotelsearch.html">Hotels</a>
+                            
+                        </li>
+                      
+                        <li ><a href="#">Directories</a>
+                           <ul>
+                                
+								<li><a href="agentdefaultlimocompanies.html"  class="layoutfont">Limo Companies</a>
+                                </li>
+								<li><a href="agentdefaultcaretakersearch.html" class="layoutfont" >Caretakers</a>
+                                </li>
+                            </ul>
+                        </li>
+                   
+                         <li><a href="agentblog-abletraveler.html"><span><i class="fa fa-rss"></i></span> &nbsp;Blog</a></li>
+						<li><a href="agentcontact-us.html">Contact US</a>
+                            
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+
+
+        <div class="container">
+           
+            <div class="" >
+                <h3>Search for Hotel</h3>
+                 <form >
+												<div class="input-daterange" data-date-format="M d, D">
+												 <div class="row">
+												 <div class="col-md-6">
+                                                    <div class="form-group form-group-lg form-group-icon-left"><i class="fa fa-map-marker input-icon"></i>
+                                                        <label>Where are you going?</label>
+                                                        <input class="typeahead form-control" placeholder="City, State, Point of Interest or U.S. Zip Code" type="text" />
+                                                    </div>
+													</div>
+													<div class="col-md-3">
+                                                                <div class="form-group form-group-lg form-group-icon-left"><i class="fa fa-calendar input-icon input-icon-highlight"></i>
+                                                                    <label>Check-in</label>
+                                                                    <input class="form-control" name="start" type="text" />
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-3">
+                                                                <div class="form-group form-group-lg form-group-icon-left"><i class="fa fa-calendar input-icon input-icon-highlight"></i>
+                                                                    <label>Check-out</label>
+                                                                    <input class="form-control" name="end" type="text" />
+                                                                </div>
+                                                            </div>
+													</div>
+													</div>
+                                                    <div class="input-daterange" data-date-format="M d, D">
+                                                        <div class="row">
+                                                        </div>
+                                                    </div>
+                                                    <a class="btn btn-primary btn-md pull-right" href="#">Search for Hotels</a>
+                                                </form>
+            </div>
+           
+            <div class="row">
+                <div class="col-md-3">
+                    <aside class="booking-filters text-white">
+                        <h3>Filter By:</h3>
+                        <ul class="list booking-filters-list">
+                           
+                            <li>
+                                <h5 class="booking-filters-title">Star Rating</h5>
+                                <div class="checkbox">
+                                    <label>
+                                        <input class="i-check" type="checkbox" />5 star (220)</label>
+                                </div>
+                                <div class="checkbox">
+                                    <label>
+                                        <input class="i-check" type="checkbox" />4 star (112)</label>
+                                </div>
+                                <div class="checkbox">
+                                    <label>
+                                        <input class="i-check" type="checkbox" />3 star (75)</label>
+                                </div>
+                                <div class="checkbox">
+                                    <label>
+                                        <input class="i-check" type="checkbox" />2 star (60)</label>
+                                </div>
+                                <div class="checkbox">
+                                    <label>
+                                        <input class="i-check" type="checkbox" />1 star (20)</label>
+                                </div>
+                            </li>
+                            <li>
+                                <h5 class="booking-filters-title">Facilities</h5>
+                                <div class="checkbox">
+                                    <label>
+                                        <input class="i-check" type="checkbox" />Wheelchair access</label>
+                                </div>
+                                <div class="checkbox">
+                                    <label>
+                                        <input class="i-check" type="checkbox" /> Wheel in shower</label>
+                                </div>
+                                <div class="checkbox">
+                                    <label>
+                                        <input class="i-check" type="checkbox" />Wheelchair ramps</label>
+                                </div>
+                                <div class="checkbox">
+                                    <label>
+                                        <input class="i-check" type="checkbox" /> Electric bed</label>
+                                </div>
+                                <div class="checkbox">
+                                    <label>
+                                        <input class="i-check" type="checkbox" />Grab rails</label>
+                                </div>
+                                <div class="checkbox">
+                                    <label>
+                                        <input class="i-check" type="checkbox" /> Hearing facilities</label>
+                                </div>
+                                <div class="checkbox">
+                                    <label>
+                                        <input class="i-check" type="checkbox" />Level flat drive</label>
+                                </div>
+                                <div class="checkbox">
+                                    <label>
+                                        <input class="i-check" type="checkbox" />Visual aids</label>
+                                </div>
+                                <div class="checkbox">
+                                    <label>
+                                        <input class="i-check" type="checkbox" />Hoists available</label>
+                                </div>
+                                <div class="checkbox">
+                                    <label>
+                                        <input class="i-check" type="checkbox" />Pet Friendly</label>
+                                </div>
+                            </li>
+                            <li>
+                                <h5 class="booking-filters-title">Accommodation Type</h5>
+                                <div class="checkbox">
+                                    <label>
+                                        <input class="i-check" type="checkbox" /> Hotels</label>
+                                </div>
+                            
+                                <div class="checkbox">
+                                    <label>
+                                        <input class="i-check" type="checkbox" />  Guest Houses </label>
+                                </div>
+                                <div class="checkbox">
+                                    <label>
+                                        <input class="i-check" type="checkbox" /> Bed and Breakfast</label>
+                                </div>
+                              
+                                <div class="checkbox">
+                                    <label>
+                                        <input class="i-check" type="checkbox" /> Villas </label>
+                                </div>
+                                
+                                <div class="checkbox">
+                                    <label>
+                                        <input class="i-check" type="checkbox" /> Cottages</label>
+                                </div>
+                                <div class="checkbox">
+                                    <label>
+                                        <input class="i-check" type="checkbox" />Bungalows</label>
+                                </div>
+                                <div class="checkbox">
+                                    <label>
+                                        <input class="i-check" type="checkbox" /> Holiday Homes</label>
+                                </div>
+								 <div class="checkbox">
+                                    <label>
+                                        <input class="i-check" type="checkbox" /> Log Cabins</label>
+                                </div>
+								 <div class="checkbox">
+                                    <label>
+                                        <input class="i-check" type="checkbox" /> Canal Boats</label>
+                                </div>
+                            </li>
+                           
+                        </ul>
+                    </aside>
+                </div>
+                <div class="col-md-9">
+                    <div class="nav-drop booking-sort">
+                        <h5 class="booking-sort-title"><a href="#">Sort: Availability<i class="fa fa-angle-down"></i><i class="fa fa-angle-up"></i></a></h5>
+                        <ul class="nav-drop-menu">
+                            <li><a href="#">Price (low to high)</a>
+                            </li>
+                            <li><a href="#">Price (hight to low)</a>
+                            </li>
+                            <li><a href="#">Ranking</a>
+                            </li>
+                            <li><a href="#">Distance</a>
+                            </li>
+                           
+                        </ul>
+                    </div>
+                    <ul class="booking-list">
+                        <li>
+                            <a class="booking-item" href="#">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <div class="booking-item-img-wrap">
+                                            <img src="img/24753_219_z.jpg" alt="Image Alternative text" title="hotel PORTO BAY SERRA GOLF living room" />
+                                            <div class="booking-item-img-num"><i class="fa fa-picture-o"></i>27</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="booking-item-rating">
+                                            <ul class="icon-group booking-item-rating-stars">
+                                                <li><i class="fa fa-star"></i>
+                                                </li>
+                                                <li><i class="fa fa-star"></i>
+                                                </li>
+                                                <li><i class="fa fa-star"></i>
+                                                </li>
+                                                <li><i class="fa fa-star"></i>
+                                                </li>
+                                                <li><i class="fa fa-star-o"></i>
+                                                </li>
+                                            </ul><span class="booking-item-rating-number"><b >4</b> of 5</span><small>(1004 reviews)</small>
+                                        </div>
+                                        <h5 class="booking-item-title">Hyatt Regency Dallas</h5>
+                                        <p class="booking-item-address">
+										<i class="fa fa-map-marker"></i>Dallas,TX </p>
+										
+										<p>This luxury Hyatt Regency is purpose built to allow easy wheelchair and disabled access...</p>
+										<img class="origin " src="img/showerchair.png" alt="Image Alternative text" title="wheel in shower" />
+										<img class="origin " src="img/wheelchair.png" alt="Image Alternative text" title="wheelchair" />
+										<img class="origin " src="img/viualaids.png" alt="Image Alternative text" title="viualaids" />
+										<img class="origin " src="img/electircbed.png" alt="Image Alternative text" title="electricbed" />
+										<img class="origin " src="img/wheelchairramps.png" alt="Image Alternative text" title="wheelchair ramps" />
+										<img class="origin " src="img/levelflatdrive.png" alt="Image Alternative text" title="levelflatdrive" />
+										<!-- <img class="origin " src="img/specialneedssuitable.png" alt="Image Alternative text" title="special needs suitable" /> -->
+                                    </div>
+                                    <div class="col-md-3">
+									<span class="booking-item-price-from">from</span>
+									<span class="booking-item-price">$111</span><span>/night</span>
+									<span class="btn btn-primary redirect">View details</span>
+									<span class="heart"><i class="fa fa-heart" title="Add to favourite"></i></span>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="booking-item" href="#">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <div class="booking-item-img-wrap">
+                                            <img src="img/20219_364_z.jpg" alt="Image Alternative text" title="The St. Regis Washington, D.C." />
+                                            <div class="booking-item-img-num"><i class="fa fa-picture-o"></i>6</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="booking-item-rating">
+                                            <ul class="icon-group booking-item-rating-stars">
+                                                <li><i class="fa fa-star"></i>
+                                                </li>
+                                                <li><i class="fa fa-star"></i>
+                                                </li>
+                                                <li><i class="fa fa-star"></i>
+                                                </li>
+                                                <li><i class="fa fa-star"></i>
+                                                </li>
+                                                <li><i class="fa fa-star"></i>
+                                                </li>
+                                            </ul><span class="booking-item-rating-number"><b >5</b> of 5</span><small>(154 reviews)</small>
+                                        </div>
+                                        <h5 class="booking-item-title">The St. Regis Washington, D.C.</h5>
+                                        <p class="booking-item-address"><i class="fa fa-map-marker"></i> Washington ,DC</p>
+										
+										<p>Six award - winning fully accessible lodges set in two acres of Cornish Countryside...</p>
+										
+										<img class="origin " src="img/electircbed.png" alt="Image Alternative text" title="electricbed" />
+										<img class="origin " src="img/viualaids.png" alt="Image Alternative text" title="viualaids" />
+										<img class="origin " src="img/showerchair.png" alt="Image Alternative text" title="wheel in shower" />											
+										<img class="origin " src="img/wheelchair.png" alt="Image Alternative text" title="wheelchair" />
+										<img class="origin " src="img/ears.png" alt="Image Alternative text" title="ears" />
+										
+										
+                                    </div>
+                                    <div class="col-md-3">
+									<span class="booking-item-price-from">from</span>
+									<span class="booking-item-price">$327</span>
+									<span>/night</span>
+									<span class="btn btn-primary redirect">View details</span>
+									<span class="heart"><i class="fa fa-heart" title="Add to favourite"></i></span>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="booking-item" href="#">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <div class="booking-item-img-wrap">
+                                            <img src="img/450973_251_z.jpg" alt="Image Alternative text" title="InterContinental Stephen F. Austin" />
+                                            <div class="booking-item-img-num"><i class="fa fa-picture-o"></i>23</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="booking-item-rating">
+                                            <ul class="icon-group booking-item-rating-stars">
+                                                <li><i class="fa fa-star"></i>
+                                                </li>
+                                                <li><i class="fa fa-star"></i>
+                                                </li>
+                                                <li><i class="fa fa-star"></i>
+                                                </li>
+                                                <li><i class="fa fa-star"></i>
+                                                </li>
+                                                <li><i class="fa fa-star-o"></i>
+                                                </li>
+                                            </ul><span class="booking-item-rating-number"><b >4</b> of 5</span><small>(1306 reviews)</small>
+                                        </div>
+                                        <h5 class="booking-item-title">InterContinental Stephen F. Austin</h5>
+                                        <p class="booking-item-address"><i class="fa fa-map-marker"></i> Austin,TX</p>
+										<p>It is constructed in an ecologically friendly manner using locally sourced wood and is incredibly light and airy inside with double height ceilings...</p>
+										<img class="origin " src="img/wheelchairramps.png" alt="Image Alternative text" title="wheelchair ramps" />
+										<img class="origin " src="img/showerchair.png" alt="Image Alternative text" title="wheel in shower" />
+										<img class="origin " src="img/wheelchair.png" alt="Image Alternative text" title="wheelchair" />																											
+										<img class="origin " src="img/levelflatdrive.png" alt="Image Alternative text" title="levelflatdrive" />
+										<img class="origin " src="img/specialneedssuitable.png" alt="Image Alternative text" title="special needs suitable	" />
+                                    </div>
+                                    <div class="col-md-3"><span class="booking-item-price-from">from</span>
+									<span class="booking-item-price">$169</span><span>/night</span>
+									<span class="btn btn-primary redirect">View details</span>
+									<span class="heart"><i class="fa fa-heart" title="Add to favourite"></i></span>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="booking-item" href="#">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <div class="booking-item-img-wrap">
+                                            <img src="img/2175117_19_z (1).jpg" style="  height: 120px;" alt="Image Alternative text" title="Mandarin Oriental Boston" />
+                                            <div class="booking-item-img-num"><i class="fa fa-picture-o"></i>21</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="booking-item-rating">
+                                            <ul class="icon-group booking-item-rating-stars">
+                                                <li><i class="fa fa-star"></i>
+                                                </li>
+                                                <li><i class="fa fa-star"></i>
+                                                </li>
+                                                <li><i class="fa fa-star"></i>
+                                                </li>
+                                                <li><i class="fa fa-star"></i>
+                                                </li>
+                                                <li><i class="fa fa-star"></i>
+                                                </li>
+                                            </ul><span class="booking-item-rating-number"><b >5</b> of 5</span><small>(1425 reviews)</small>
+                                        </div>
+                                        <h5 class="booking-item-title">Mandarin Oriental Boston</h5>
+                                        <p class="booking-item-address"><i class="fa fa-map-marker"></i> Boston,MA </p>
+										<p>The Hotel is situated in a premier position for a wide variety of activities in and around the Lake...</p>
+										<img class="origin " src="img/specialneedssuitable.png" alt="Image Alternative text" title="special needs suitable	" />
+										<img class="origin " src="img/viualaids.png" alt="Image Alternative text" title="viualaids" />
+										<img class="origin " src="img/showerchair.png" alt="Image Alternative text" title="wheel in shower" />																																	
+										<img class="origin " src="img/wheelchair.png" alt="Image Alternative text" title="wheelchair" />
+										
+                                    </div>
+                                    <div class="col-md-3"><span class="booking-item-price-from">from</span>
+									<span class="booking-item-price">$695</span><span>/night</span>
+									<span class="btn btn-primary redirect">View details</span>
+									<span class="heart"><i class="fa fa-heart" title="Add to favourite"></i></span>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="booking-item" href="#">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <div class="booking-item-img-wrap">
+                                            <img src="img/6961_57_z.jpg" alt="Image Alternative text" title="Omni Charlotte Hotel" />
+                                            <div class="booking-item-img-num"><i class="fa fa-picture-o"></i>5</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="booking-item-rating">
+                                            <ul class="icon-group booking-item-rating-stars">
+                                                <li><i class="fa fa-star"></i>
+                                                </li>
+                                                <li><i class="fa fa-star"></i>
+                                                </li>
+                                                <li><i class="fa fa-star"></i>
+                                                </li>
+                                                <li><i class="fa fa-star"></i>
+                                                </li>
+                                                <li><i class="fa fa-star-o"></i>
+                                                </li>
+                                            </ul><span class="booking-item-rating-number"><b >4</b> of 5</span><small>(229 reviews)</small>
+                                        </div>
+                                        <h5 class="booking-item-title">Omni Charlotte Hotel</h5>
+                                        <p class="booking-item-address"><i class="fa fa-map-marker"></i> Charlotte,NC</p>
+										<p>The hotel boasts spectacular panoramic views of the sea and miles of golden sand....</p>
+										<img class="origin " src="img/wheelchairramps.png" alt="Image Alternative text" title="wheelchair ramps" />
+										<img class="origin " src="img/showerchair.png" alt="Image Alternative text" title="wheel in shower" />
+										<img class="origin " src="img/wheelchair.png" alt="Image Alternative text" title="wheelchair" />																											
+										<img class="origin " src="img/levelflatdrive.png" alt="Image Alternative text" title="levelflatdrive" />
+										
+                                    </div>
+                                    <div class="col-md-3"><span class="booking-item-price-from">from</span>
+									<span class="booking-item-price">$139</span><span>/night</span>
+									<span class="btn btn-primary redirect">View details</span>
+									<span class="heart"><i class="fa fa-heart" title="Add to favourite"></i></span>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="booking-item" href="#">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <div class="booking-item-img-wrap">
+                                            <img src="img/15056_40_z.jpg" alt="Image Alternative text" title="The Westin Columbus" />
+                                            <div class="booking-item-img-num"><i class="fa fa-picture-o"></i>28</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="booking-item-rating">
+                                            <ul class="icon-group booking-item-rating-stars">
+                                                <li><i class="fa fa-star"></i>
+                                                </li>
+                                                <li><i class="fa fa-star"></i>
+                                                </li>
+                                                <li><i class="fa fa-star"></i>
+                                                </li>
+                                                <li><i class="fa fa-star"></i>
+                                                </li>
+                                                <li><i class="fa fa-star-o"></i>
+                                                </li>
+                                            </ul><span class="booking-item-rating-number"><b >4</b> of 5</span><small>(181 reviews)</small>
+                                        </div>
+                                        <h5 class="booking-item-title">The Westin Columbus</h5>
+                                        <p class="booking-item-address"><i class="fa fa-map-marker"></i>Columbus,OH </p>
+										<p>An elegant hotel offering contemporary accommodation near the heart of London. It boasts an excellent location overlooking Kensington Gardens....</p>
+										<img class="origin " src="img/showerchair.png" alt="Image Alternative text" title="wheel in shower" />
+										<img class="origin " src="img/specialneedssuitable.png" alt="Image Alternative text" title="special needs suitable	" />
+										<img class="origin " src="img/viualaids.png" alt="Image Alternative text" title="viualaids" />
+										<img class="origin " src="img/electircbed.png" alt="Image Alternative text" title="electricbed" />
+										<img class="origin " src="img/wheelchairramps.png" alt="Image Alternative text" title="wheelchair ramps" />
+                                    </div>
+                                    <div class="col-md-3"><span class="booking-item-price-from">from</span>
+									<span class="booking-item-price">$216</span><span>/night</span>
+									<span class="btn btn-primary redirect">View details</span>
+									<span class="heart"><i class="fa fa-heart" title="Add to favourite"></i></span>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="booking-item" href="#">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <div class="booking-item-img-wrap">
+                                            <img src="img/8260654_11_z (1).jpg" alt="Image Alternative text" title="The Crawford Hotel" />
+                                            <div class="booking-item-img-num"><i class="fa fa-picture-o"></i>9</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="booking-item-rating">
+                                            <ul class="icon-group booking-item-rating-stars">
+                                                <li><i class="fa fa-star"></i>
+                                                </li>
+                                                <li><i class="fa fa-star"></i>
+                                                </li>
+                                                <li><i class="fa fa-star"></i>
+                                                </li>
+                                                <li><i class="fa fa-star"></i>
+                                                </li>
+                                                <li><i class="fa fa-star-half-empty"></i>
+                                                </li>
+                                            </ul><span class="booking-item-rating-number"><b >4.5</b> of 5</span><small>(563 reviews)</small>
+                                        </div>
+                                        <h5 class="booking-item-title">The Crawford Hotel</h5>
+                                        <p class="booking-item-address"><i class="fa fa-map-marker"></i> Denver Co (U S A)</p>
+										<p>This hotel is located on a superb sea front enjoying a level position with stunning sea views across the bay.....</p>
+										<img class="origin " src="img/showerchair.png" alt="Image Alternative text" title="wheel in shower" />
+								
+										<img class="origin " src="img/viualaids.png" alt="Image Alternative text" title="viualaids" />
+										<img class="origin " src="img/electircbed.png" alt="Image Alternative text" title="electricbed" />
+										<img class="origin " src="img/wheelchairramps.png" alt="Image Alternative text" title="wheelchair ramps" />
+										<img class="origin " src="img/ears.png" alt="Image Alternative text" title="ears" />
+                                    </div>
+                                    <div class="col-md-3"><span class="booking-item-price-from">from</span>
+									<span class="booking-item-price">$249</span><span>/night</span>
+									<span class="btn btn-primary redirect">View details</span>
+									<span class="heart"><i class="fa fa-heart" title="Add to favourite"></i></span>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="booking-item" href="#">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <div class="booking-item-img-wrap">
+                                            <img src="img/19216_108_z.jpg" alt="Image Alternative text" title="The Townsend Hotel" />
+                                            <div class="booking-item-img-num"><i class="fa fa-picture-o"></i>13</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="booking-item-rating">
+                                            <ul class="icon-group booking-item-rating-stars">
+                                                <li><i class="fa fa-star"></i>
+                                                </li>
+                                                <li><i class="fa fa-star"></i>
+                                                </li>
+                                                <li><i class="fa fa-star"></i>
+                                                </li>
+                                                <li><i class="fa fa-star"></i>
+                                                </li>
+                                                <li><i class="fa fa-star-o"></i>
+                                                </li>
+                                            </ul><span class="booking-item-rating-number"><b >4</b> of 5</span><small>(846 reviews)</small>
+                                        </div>
+                                        <h5 class="booking-item-title">The Townsend Hotel</h5>
+                                        <p class="booking-item-address"><i class="fa fa-map-marker"></i> Birmingham  , MI</p>
+										<p>Four specifically designed accessible wheelchair rooms, built in the pretty walled garden, with all the facilities available for those less able including wheel-in showers, grab rails, adjustable shower seats. ....</p>
+										<img class="origin " src="img/wheelchairramps.png" alt="Image Alternative text" title="wheelchair ramps" />
+										
+										<img class="origin " src="img/wheelchair.png" alt="Image Alternative text" title="wheelchair" />																											
+										<img class="origin " src="img/levelflatdrive.png" alt="Image Alternative text" title="levelflatdrive" />
+										<img class="origin " src="img/hoistsavaliable.png" alt="Image Alternative text" title="hoistsavaliable" />
+                                    </div>
+                                    <div class="col-md-3"><span class="booking-item-price-from">from</span>
+									<span class="booking-item-price">$305</span><span>/night</span>
+									<span class="btn btn-primary redirect">View details</span>
+									<span class="heart"><i class="fa fa-heart" title="Add to favourite"></i></span>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                      
+                    </ul>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <p><small>521 hotels found in New York. &nbsp;&nbsp;Showing 1 – 15</small>
+                            </p>
+                            <ul class="pagination">
+                                <li class="active"><a href="#">1</a>
+                                </li>
+                                <li><a href="#">2</a>
+                                </li>
+                                <li><a href="#">3</a>
+                                </li>
+                                <li><a href="#">4</a>
+                                </li>
+                                <li><a href="#">5</a>
+                                </li>
+                                
+                                <li class="dots">...</li>
+                                <li><a href="#">43</a>
+                                </li>
+                                <li class="next"><a href="#">Next Page</a>
+                                </li>
+                            </ul>
+                        </div>
+                       
+                    </div>
+                </div>
+            </div>
+            <div class="gap"></div>
+        </div>
+
+
+
+      <footer id="main-footer">
+            <div class="container">
+                <div class="row row-wrap">
+                    <div class="col-md-3">
+                        <a class="logo" href="index.html">
+                            <img src="img/logo-invert.png" alt="Image Alternative text" title="Image Title" />
+                        </a>
+                        <p class="mb20">Booking, reviews and advices on hotels, resorts, vacation rentals, and lots more!</p>
+                        <ul class="list list-horizontal list-space">
+                            <li>
+                                <a class="fa fa-facebook box-icon-normal round animate-icon-bottom-to-top" href="#"></a>
+                            </li>
+                            <li>
+                                <a class="fa fa-twitter box-icon-normal round animate-icon-bottom-to-top" href="#"></a>
+                            </li>
+                            <li>
+                                <a class="fa fa-google-plus box-icon-normal round animate-icon-bottom-to-top" href="#"></a>
+                            </li>
+                            <li>
+                                <a class="fa fa-linkedin box-icon-normal round animate-icon-bottom-to-top" href="#"></a>
+                            </li>
+                            <li>
+                                <a class="fa fa-pinterest box-icon-normal round animate-icon-bottom-to-top" href="#"></a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="col-md-3">
+                        <h4>Newsletter</h4>
+                        <form>
+                            <label>Enter your E-mail Address</label>
+                            <input type="text" class="form-control">
+                            <p class="mt5"><small>*We Never Send Spam</small>
+                            </p>
+                            <input type="submit" class="btn btn-primary" value="Subscribe">
+                        </form>
+                    </div>
+                    <div class="col-md-2">
+                        <ul class="list list-footer">
+                            <li><a href="#">About US</a>
+                            </li>
+                            <li><a href="#">Best Hotels</a>
+                            </li>
+                            <li><a href="#">Best Price Guarantee</a>
+                            </li>
+                            <li><a href="#">Travel News</a>
+                            </li>
+                            <li><a href="#">Privacy Policy</a>
+                            </li>
+                            <li><a href="#">Terms of Use</a>
+                            </li>
+                            <li><a href="#">Feedback</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4">
+                        <h4>Have Questions?</h4>
+                        <h4 class="text-color">+1-202-555-0173</h4>
+                        <h4><a href="#" class="text-color">support@Abletraveler.com</a></h4>
+                        <p>24/7 Dedicated Customer Support</p>
+                    </div>
+
+                </div>
+            </div>
+        </footer>
+
+        <script src="js/jquery.js"></script>
+        <script src="js/bootstrap.js"></script>
+        <script src="js/slimmenu.js"></script>
+        <script src="js/bootstrap-datepicker.js"></script>
+        <script src="js/bootstrap-timepicker.js"></script>
+        <script src="js/nicescroll.js"></script>
+        <script src="js/dropit.js"></script>
+        <script src="js/ionrangeslider.js"></script>
+        <script src="js/icheck.js"></script>
+        <script src="js/fotorama.js"></script>
+        <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+        <script src="js/typeahead.js"></script>
+        <script src="js/card-payment.js"></script>
+        <script src="js/magnific.js"></script>
+        <script src="js/owl-carousel.js"></script>
+        <script src="js/fitvids.js"></script>
+        <script src="js/tweet.js"></script>
+        <script src="js/countdown.js"></script>
+        <script src="js/gridrotator.js"></script>
+        <script src="js/custom.js"></script>
+    </div>
+	
+	<script>
+	$(".redirect").click(function()
+	{
+	window.location.href = 'agenthotel-details.html';
+	});
+	</script>
+	
+	<script>
+	  $(function(){
+    $(".dropdown").hover(            
+            function() {
+                $('.dropdown-menu', this).stop( true, true ).fadeIn("fast");
+                $(this).toggleClass('open');
+                $('b', this).toggleClass("caret caret-up");                
+            },
+            function() {
+                $('.dropdown-menu', this).stop( true, true ).fadeOut("fast");
+                $(this).toggleClass('open');
+                $('b', this).toggleClass("caret caret-up");                
+            });
+    });
+	</script>
+</body>
+
+</html>
+
+
