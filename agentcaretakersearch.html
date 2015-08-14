@@ -1,0 +1,461 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>ableTraveler</title>
+
+
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+    <meta name="keywords" content="Template, html, premium, themeforest" />
+    <meta name="description" content="Traveler - Premium template for travel companies">
+    <meta name="author" content="Tsoy">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- GOOGLE FONTS -->
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,600' rel='stylesheet' type='text/css'>
+    <!-- /GOOGLE FONTS -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/mystyles.css">
+    <script src="js/modernizr.js"></script>
+
+
+</head>
+
+<body>
+
+    <!-- FACEBOOK WIDGET -->
+    <div id="fb-root"></div>
+    <script>
+        (function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s);
+            js.id = id;
+            js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.0";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    </script>
+    <!-- /FACEBOOK WIDGET -->
+    <div class="global-wrap">
+       <header id="main-header">
+            <div class="header-top">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <a class="logo" href="index.html">
+                                <img src="img/logo-invert.png" alt="Image Alternative text" title="Image Title" />
+                            </a>
+                        </div>
+                        <div class="col-md-3 col-md-offset-2">
+                           
+                        </div>
+                         <div class="col-md-4">
+                            <div class="top-user-area clearfix">
+                                <ul class="top-user-area-list list list-horizontal list-border ">
+                                    <li class="top-user-area-avatar dropdown">
+                                       <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                            <img class="origin round" src="img/amaze_40x40.jpg" alt="Image Alternative text" title="AMaze" />John</a>
+											&nbsp;<span style="color:white;cursor:pointer">(Agent)</span><b class="caret"></b>
+											<ul class="dropdown-menu">
+										<li><a href="agent-profile.html"><i class="fa fa-user"></i> &nbsp;My profile</a></li>
+										<li><a href="agentchangepassword.html"><i class="fa fa-key fa-fw"></i> &nbsp;Change Password</a></li>
+										<li class="divider"></li>
+										<li><a href="login.html"><i class="fa fa-sign-out"></i> &nbsp;Sign Out</a></li>
+									  </ul>
+                                    </li>
+                                   <!--  <li><a href="login.html">Sign Out</a>
+                                    </li> -->
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="nav">
+                    <ul class="slimmenu" id="slimmenu">
+                        <li ><a href="agentdashboard.html">Home</a>
+                            
+                        </li>
+                         
+                        
+                        <li><a href="agentdefaulthotelsearch.html">Hotels</a>
+                            
+                        </li>
+                         
+                        <li class="active"><a href="#">Directories</a>
+                           <ul>
+                               
+								<li><a href="agentdefaultlimocompanies.html"  style="font-size:13px !important">Limo Companies</a>
+                                </li>
+								<li><a href="agentdefaultcaretakersearch.html" style="font-size:13px !important" >Caretakers</a>
+                                </li>
+                            </ul>
+                        </li>
+                      
+                          <li><a href="agentblog-abletraveler.html"><span><i class="fa fa-rss"></i></span> &nbsp;Blog</a></li>
+						<li><a href="agentcontact-us.html">Contact US</a>
+                            
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+
+
+
+
+        <div class="container">
+           
+            <div class="mfp-with-anim mfp-hide mfp-dialog mfp-search-dialog" id="search-dialog">
+                <h3>Search for Caretakers</h3>
+                                       
+                                                <form>
+                                                    <div class="input-daterange" data-date-format="M d, D">
+                                                        <div class="row">
+                                                            <div class="col-md-6">
+                                                                <div class="form-group form-group-lg form-group-icon-left"><i class="fa fa-map-marker input-icon"></i>
+                                                                    <label>Tours / Vocations names?</label>
+                                                                    <input class="typeahead form-control" placeholder="City, State, Point of Vocation hotels " type="text" />
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-3">
+                                                                <div class="form-group form-group-lg form-group-icon-left"><i class="fa fa-calendar input-icon input-icon-highlight"></i>
+                                                                    <label>From</label>
+                                                                    <input class="form-control" name="start" type="text" />
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-3">
+                                                                <div class="form-group form-group-lg form-group-icon-left"><i class="fa fa-calendar input-icon input-icon-highlight"></i>
+                                                                    <label>To</label>
+                                                                    <input class="form-control" name="end" type="text" />
+                                                                </div>
+                                                            </div>
+                                                        </div>
+														<div class="row">
+														 <div class="col-md-3">
+                            <h5>Physically conditions for</h5>
+                            <div class="checkbox">
+                                <label>
+                                    <input class="i-check" type="checkbox" />Handicaps</label>
+                            </div>
+                            <div class="checkbox">
+                                <label>
+                                    <input class="i-check" type="checkbox" />Hearing impaired</label>
+                            </div>
+                            <div class="checkbox">
+                                <label>
+                                    <input class="i-check" type="checkbox" />Sight impaired</label>
+                            </div>
+                           <div class="checkbox">
+                                <label>
+                                    <input class="i-check" type="checkbox" />Mentally disabled</label>
+                            </div>
+                        </div></div>
+                                                    </div>
+                                                    <a class="btn btn-primary btn-lg" href="commingsoon.html">Search for Caretakers</a>
+                                                </form>
+                                            
+            </div>
+            
+            <div class="row ml50">
+               <h3 class="booking-title">102 caretakers in Las Vegas on Aug 5 - Aug 8<small><a class="popup-text" style="font-size:18px" href="#search-dialog" data-effect="mfp-zoom-out">Change search</a></small></h3>
+                <div class="col-md-10">
+                    <div class="nav-drop booking-sort">
+                        <h5 class="booking-sort-title"><a href="#">Sort: Availability<i class="fa fa-angle-down"></i><i class="fa fa-angle-up"></i></a></h5>
+                        <ul class="nav-drop-menu">
+                            <li><a href="#">Price (low to high)</a>
+                            </li>
+                            <li><a href="#">Price (hight to low)</a>
+                            </li>
+                            <li><a href="#">Ranking</a>
+                            </li>
+                            <li><a href="#">Distance</a>
+                            </li>
+                           
+                        </ul>
+                    </div>
+                     <ul class="booking-list">
+                        
+                       
+                        
+                        <li>
+                            <a class="booking-item" href="#">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <div class="booking-item-img-wrap">
+                                            <img src="img/caretaker3.jpg"  alt="Image Alternative text" title="Hyatt Regency Dallas" />
+                                            
+                                        </div>
+                                    </div>
+                                    <div class="col-md-7">
+                                        
+                                        <h5 class="booking-item-title">Dayamanti B.</h5>
+                                        <p class="booking-item-address">
+										<i class="fa fa-map-marker"></i>Las Vegas, NV</p>
+										
+										<p>I am seeking a skilled position in the health care field where I can use my professional training .I have more than 5 years of experience working in the medical area. I consider myself someone exceptional and very professional looking for a great work environment..</p>
+										
+                                    </div>
+                                    <div class="col-md-2">
+									<span class="booking-item-price-from">from</span>
+									<span class="booking-item-price">$15</span><span>/hr</span>
+									<p>* Live In/Out</p>
+									<p>* Full Time</p>
+									<p>* Transportation</p>
+																	
+									<span class="btn btn-primary redirect">View Profile</span>
+									
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="booking-item" href="#">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <div class="booking-item-img-wrap">
+                                            <img src="img/caretaker5.jpg" alt="Image Alternative text" title="Hilton Anatole" />
+                                            
+                                        </div>
+                                    </div>
+                                    <div class="col-md-7">
+                                       
+                                        <h5 class="booking-item-title">Amarawansa W.</h5>
+                                        <p class="booking-item-address"><i class="fa fa-map-marker"></i>Las Vegas, NV</p>
+										
+										<p>I good customer service experience and I had good interpersonal relationship. I got 4 customer services highly rated awards.I like help people those who need help I will be get mental satisfaction when I help to somebody.If I have a chance to live with elderly people I get a close friendship and help them. </p>
+										
+                                    </div>
+                                   <div class="col-md-2">
+									<span class="booking-item-price-from">from</span>
+									<span class="booking-item-price">$17</span><span>/hr</span>
+									<p>* Live In/Out</p>
+									<p>* Transportation</p>
+																
+									<span class="btn btn-primary redirect">View Profile</span>
+									
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+						 <li>
+                            <a class="booking-item" href="#">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <div class="booking-item-img-wrap">
+                                            <img src="img/caretaker6.jpeg" alt="Image Alternative text" title="Hilton Anatole" />
+                                            
+                                        </div>
+                                    </div>
+                                    <div class="col-md-7">
+                                       
+                                        <h5 class="booking-item-title">Martin M.</h5>
+                                        <p class="booking-item-address"><i class="fa fa-map-marker"></i>Las Vegas, NV</p>
+										
+										<p>I became a caretaker over 26 years ago ,was drawn to if being around,the elderly and handicapped.I guest providing  comfort  and  support  for those i takecare of single guy who wanted to be an actor, that is  what  brought me to the west coast from florida. </p>
+										
+                                    </div>
+                                   <div class="col-md-2">
+									<span class="booking-item-price-from">from</span>
+									<span class="booking-item-price">$18</span><span>/hr</span>
+									<p>* Live In/Out</p>
+									<p>* Full Time</p>
+									<p>* Transportation</p>
+																
+									<span class="btn btn-primary redirect">View Profile</span>
+									
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+						<li>
+                            <a class="booking-item" href="#">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <div class="booking-item-img-wrap">
+                                            <img src="img/caretaker8.jpg" alt="Image Alternative text" title="Hilton Anatole" />
+                                            
+                                        </div>
+                                    </div>
+                                    <div class="col-md-7">
+                                       
+                                        <h5 class="booking-item-title">Alicia S.</h5>
+                                        <p class="booking-item-address"><i class="fa fa-map-marker"></i>Las Vegas, NV</p>
+										
+										<p>I became a caregiver because it is my way of giving back. It feels good knowing that you can put a smile on a residents face when they are feeling down. I am proud that I can walk into work with a smile and seeing the residents. </p>
+										
+                                    </div>
+                                   <div class="col-md-2">
+									<span class="booking-item-price-from">from</span>
+									<span class="booking-item-price">$12</span><span>/hr</span>
+									<p>* Live In/Out</p>
+									
+									<p>* Transportation</p>
+																
+									<span class="btn btn-primary redirect">View Profile</span>
+									
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        
+                      
+                    </ul>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <p><small>102 caretakers in Las Vegas. &nbsp;&nbsp;Showing 1 – 3</small>
+                            </p>
+                            <ul class="pagination">
+                                <li class="active"><a href="#">1</a>
+                                </li>
+                                <li><a href="#">2</a>
+                                </li>
+                                
+                                
+                                <li class="dots">...</li>
+                                <li><a href="#">3</a>
+                                </li>
+                                <li class="next"><a href="#">Next Page</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6 text-right">
+                            <p>Not what you're looking for? <a class="popup-text" href="#search-dialog" data-effect="mfp-zoom-out">Try your search again</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="gap"></div>
+        </div>
+
+
+
+      <footer id="main-footer">
+            <div class="container">
+                <div class="row row-wrap">
+                    <div class="col-md-3">
+                        <a class="logo" href="index.html">
+                            <img src="img/logo-invert.png" alt="Image Alternative text" title="Image Title" />
+                        </a>
+                        <p class="mb20">Booking, reviews and advices on hotels, resorts, vacation rentals, and lots more!</p>
+                        <ul class="list list-horizontal list-space">
+                            <li>
+                                <a class="fa fa-facebook box-icon-normal round animate-icon-bottom-to-top" href="#"></a>
+                            </li>
+                            <li>
+                                <a class="fa fa-twitter box-icon-normal round animate-icon-bottom-to-top" href="#"></a>
+                            </li>
+                            <li>
+                                <a class="fa fa-google-plus box-icon-normal round animate-icon-bottom-to-top" href="#"></a>
+                            </li>
+                            <li>
+                                <a class="fa fa-linkedin box-icon-normal round animate-icon-bottom-to-top" href="#"></a>
+                            </li>
+                            <li>
+                                <a class="fa fa-pinterest box-icon-normal round animate-icon-bottom-to-top" href="#"></a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="col-md-3">
+                        <h4>Newsletter</h4>
+                        <form>
+                            <label>Enter your E-mail Address</label>
+                            <input type="text" class="form-control">
+                            <p class="mt5"><small>*We Never Send Spam</small>
+                            </p>
+                            <input type="submit" class="btn btn-primary" value="Subscribe">
+                        </form>
+                    </div>
+                    <div class="col-md-2">
+                        <ul class="list list-footer">
+                            <li><a href="#">About US</a>
+                            </li>
+                            <li><a href="#">Best Hotels</a>
+                            </li>
+                            <li><a href="#">Best Price Guarantee</a>
+                            </li>
+                            <li><a href="#">Travel News</a>
+                            </li>
+                            <li><a href="#">Privacy Policy</a>
+                            </li>
+                            <li><a href="#">Terms of Use</a>
+                            </li>
+                            <li><a href="#">Feedback</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4">
+                        <h4>Have Questions?</h4>
+                        <h4 class="text-color">+1-202-555-0173</h4>
+                        <h4><a href="#" class="text-color">support@Abletraveler.com</a></h4>
+                        <p>24/7 Dedicated Customer Support</p>
+                    </div>
+
+                </div>
+            </div>
+        </footer>
+
+        <script src="js/jquery.js"></script>
+        <script src="js/bootstrap.js"></script>
+        <script src="js/slimmenu.js"></script>
+        <script src="js/bootstrap-datepicker.js"></script>
+        <script src="js/bootstrap-timepicker.js"></script>
+        <script src="js/nicescroll.js"></script>
+        <script src="js/dropit.js"></script>
+        <script src="js/ionrangeslider.js"></script>
+        <script src="js/icheck.js"></script>
+        <script src="js/fotorama.js"></script>
+        <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+        <script src="js/typeahead.js"></script>
+        <script src="js/card-payment.js"></script>
+        <script src="js/magnific.js"></script>
+        <script src="js/owl-carousel.js"></script>
+        <script src="js/fitvids.js"></script>
+        <script src="js/tweet.js"></script>
+        <script src="js/countdown.js"></script>
+        <script src="js/gridrotator.js"></script>
+        <script src="js/custom.js"></script>
+    </div>
+	<style>
+	.heart
+	{
+	border: 2px solid;
+  padding: 4px 12px 6px 12px;
+  border-radius: 6px;
+	}
+	
+	</style>
+	<script>
+	$(".redirect").click(function()
+	{
+	window.location.href = 'agentcaretakerdetails.html';
+	});
+	</script>
+	
+	<script>
+	  $(function(){
+    $(".dropdown").hover(            
+            function() {
+                $('.dropdown-menu', this).stop( true, true ).fadeIn("fast");
+                $(this).toggleClass('open');
+                $('b', this).toggleClass("caret caret-up");                
+            },
+            function() {
+                $('.dropdown-menu', this).stop( true, true ).fadeOut("fast");
+                $(this).toggleClass('open');
+                $('b', this).toggleClass("caret caret-up");                
+            });
+    });
+	</script>
+</body>
+
+</html>
+
+
