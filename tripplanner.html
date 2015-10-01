@@ -47,7 +47,7 @@
                     <div class="row">
                         <div class="col-md-3">
                             <a class="logo" href="index.html">
-                                <img src="img/logo-invert.png" alt="Image Alternative text" title="Image Title" />
+                                <img src="img/ableTraveler_logo.jpg" alt="Image Alternative text" title="Image Title" />
                             </a>
                         </div>
                         <div class="col-md-3 col-md-offset-2">
@@ -97,8 +97,7 @@
                                 </li>
                                  <li><a href="defaultvacationsearch.html" style="font-size:13px !important">Vacation homes</a>
                                 </li>
-								<li><a href="defaultlimocompanies.html"  style="font-size:13px !important">Limo Companies</a>
-                                </li>
+								
 								<li><a href="defaultcaretakersearch.html" style="font-size:13px !important" >Caretakers</a>
                                 </li>
                             </ul>
@@ -130,7 +129,7 @@
                                 </ul>
                                 <div class="tab-content ">
                                     <div class="tab-pane fade in active" id="tab-1">
-                                                <h3>Plan a perfect trip with the help of an ableTraveler..</h3>
+                                                <h3>Driving ? Let us help you get there</h3>
 												
                                                 <form >
 												<div class="input-daterange" data-date-format="M d, D">
@@ -147,7 +146,12 @@
                                                                     <input class=" form-control" placeholder="Destination" type="text" />
                                                                 </div>
                                                             </div>
-                                                            
+                                                            <div class="col-md-2">
+                                                                <div class="form-group form-group-lg ">
+                                                                    <label>Number of miles</label>
+                                                                    <input class=" form-control" placeholder="Hours or miles" type="text" />
+                                                                </div>
+                                                            </div>
 															<div class="col-md-3">
                                                                 <div class="form-group form-group-lg form-group-select-plus">
                                                                     <label>How long?</label>
@@ -182,13 +186,9 @@
 													</div>
 													</div>
                                                     
-                                                    <a class="btn btn-primary btn-lg" href="tripplanner-details.html">Search for Trip Planner</a>
+                                                    <a class="btn btn-primary btn-lg" id="btnPlanMyDrive" >Plan my drive</a>
                                                 </form>
                                             </div>
-                                    
-                                   
-                                    
-                                    
                                 </div>
                             </div>
                         </div></div></div>
@@ -495,7 +495,7 @@
                 <div class="row row-wrap">
                     <div class="col-md-3">
                         <a class="logo" href="index.html">
-                            <img src="img/logo-invert.png" alt="Image Alternative text" title="Image Title" />
+                            <img src="img/ableTraveler_logo.jpg" alt="Image Alternative text" title="Image Title" />
                         </a>
                         <p class="mb20">Booking, reviews and advice on hotels, resorts, flights, vacation rentals, travel packages, and lots more!</p>
                         <ul class="list list-horizontal list-space">
@@ -576,6 +576,10 @@
         <script src="js/countdown.js"></script>
         <script src="js/gridrotator.js"></script>
         <script src="js/custom.js"></script>
+		<script type="text/javascript">
+		$(function(){$('#btnPlanMyDrive').click(function(){window.location.href='tripplanner-details.html?'+'s='+$('input[placeholder="Start Location"]').val()+'&&d='+$('input[placeholder="Destination"]').val();});});
+		</script>
+		
     </div>
    
 </body>

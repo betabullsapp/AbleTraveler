@@ -2159,7 +2159,7 @@ img.pp-img {
   display: block;
 }
 .logo img {
-  width: auto;
+  width: none;
 }
 .top-user-area {
   font-size: 12px;

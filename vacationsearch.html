@@ -21,7 +21,22 @@
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/mystyles.css">
     <script src="js/modernizr.js"></script>
+<style>
+	.booking-item-rating {
+    margin-bottom: 0px !important;
+    padding-bottom: 0px !important;
+     border-bottom: 0px solid #f7f7f7 !important; 
+    display: inline-block !important;
+}
 
+.booking-item-rating .booking-item-rating-stars {
+    display: inline-block;
+    margin-right: 17px;
+    margin-bottom: -5px;
+    color: #ed8323;
+    font-size: 14px !important;
+}
+	</style>
 
 </head>
 
@@ -47,7 +62,7 @@
                     <div class="row">
                         <div class="col-md-3">
                             <a class="logo" href="index.html">
-                                <img src="img/logo-invert.png" alt="Image Alternative text" title="Image Title" />
+                                <img src="img/ableTraveler_logo.jpg" alt="Image Alternative text" title="Image Title" />
                             </a>
                         </div>
                         <div class="col-md-3 col-md-offset-2">
@@ -97,8 +112,7 @@
                                 </li>
                                  <li><a href="defaultvacationsearch.html" style="font-size:13px !important">Vacation homes</a>
                                 </li>
-								<li><a href="defaultlimocompanies.html"  style="font-size:13px !important">Limo Companies</a>
-                                </li>
+								
 								<li><a href="defaultcaretakersearch.html" style="font-size:13px !important" >Caretakers</a>
                                 </li>
                             </ul>
@@ -123,7 +137,7 @@
         <div class="container">
            
             <div class="mfp-with-anim mfp-hide mfp-dialog mfp-search-dialog" id="search-dialog">
-                <h3>Search for Vacation Homes</h3>
+                <h3>Find a Vacation Rental</h3>
                 <form>
 												<div class="input-daterange" data-date-format="M d, D">
 												<div class="row">
@@ -137,17 +151,12 @@
                                                                 <div class="form-group form-group-lg ">
                                                                     <label>Property type</label>
                                                                     <select class="form-control ">
-                                                                        <option selected="selected">Please select</option>
-                                                                        <option>Villas</option>
-                                                                        <option>Townhomes</option>
-                                                                        <option>Apartments</option>
-                                                                        <option>Estates</option>
-                                                                        <option>Beach houses</option>
-                                                                        <option>Bungalows</option>
-                                                                        <option>Cabins</option>
-                                                                        <option>Cottages</option>
-                                                                        <option>Farmhouses</option>
-																		<option>Yachts</option>
+                                                                       <option selected="selected">All Types</option>
+                                                                        <option >Condo</option>
+                                                                        <option>Town house</option>
+                                                                        <option>Single family</option>
+                                                                        <option>Duplex</option>
+                                                                        <option>Room for rent</option>
                                                                     </select>
                                                                 </div>
                                                             </div>
@@ -166,45 +175,60 @@
 													</div></div>
                                                     <div class="input-daterange" data-date-format="M d, D">
                                                         <div class="row">
-                                                             <div class="col-md-3">
+                                                             <div class="col-md-4">
                             <h5>Accessibility Requirements</h5>
                             <div class="checkbox">
                                 <label>
-                                    <input class="i-check" type="checkbox" />Wheelchair access</label>
+                                    <input class="i-check" type="checkbox" />1st Floor room</label>
                             </div>
-                            <div class="checkbox">
+							<div class="checkbox">
+                                <label>
+                                    <input class="i-check" type="checkbox" />Open frame bed</label>
+                            </div>
+							<div class="checkbox">
+                                <label>
+                                    <input class="i-check" type="checkbox" />Bed Height 17-23</label>
+                            </div>
+                            <!-- <div class="checkbox">
+                                <label>
+                                    <input class="i-check" type="checkbox" />Wheelchair access</label>
+                            </div> -->
+                            <!-- <div class="checkbox">
                                 <label>
                                     <input class="i-check" type="checkbox" />Wheel in shower</label>
-                            </div>
+                            </div> -->
                             <div class="checkbox">
                                 <label>
-                                    <input class="i-check" type="checkbox" />Hoists available</label>
+                                    <input class="i-check" type="checkbox" />Roll in shower</label>
                             </div>
-                            <div class="checkbox">
+							<div class="checkbox">
                                 <label>
-                                    <input class="i-check" type="checkbox" />Electric bed</label>
+                                    <input class="i-check" type="checkbox" />Grab bars in tub</label>
                             </div>
                         </div>
-						 <div class="col-md-3">
-                            <br/><br/>
+						 <div class="col-md-4">
+                           <br/><br/>
+                            
+                            
                             <div class="checkbox">
                                 <label>
-                                    <input class="i-check" type="checkbox" />Grab rails</label>
+                                    <input class="i-check" type="checkbox" />Gluten free menu options</label>
                             </div>
-                            <div class="checkbox">
-                                <label>
-                                    <input class="i-check" type="checkbox" />Hearing facilities</label>
-                            </div>
-                            <div class="checkbox">
-                                <label>
-                                    <input class="i-check" type="checkbox" />Level flat drive</label>
-                            </div>
+							
                            <div class="checkbox">
                                 <label>
-                                    <input class="i-check" type="checkbox" />Visual aids</label>
+                                    <input class="i-check" type="checkbox" />Pet friendly (all pets)</label>
+                            </div>
+							 <div class="checkbox">
+                                <label>
+                                    <input class="i-check" type="checkbox" />Pet friendly (Service dogs only)</label>
+                            </div>
+							<div class="checkbox">
+                                <label>
+                                    <input class="i-check" type="checkbox" />Accessible full services restaurant on site </label>
                             </div>
                         </div>
-                                                            <div class="col-md-3">
+                                                            <div class="col-md-4">
                                                                 <div class="form-group form-group-lg form-group-select-plus">
                                                                     <label>Rooms</label>
                                                                     <div class="btn-group btn-group-select-num" data-toggle="buttons">
@@ -235,7 +259,7 @@
                                                                     </select>
                                                                 </div>
                                                             </div>
-                                                            <div class="col-md-3">
+                                                            <div class="col-md-4">
                                                                 <div class="form-group form-group-lg form-group-select-plus">
                                                                     <label>Guests</label>
                                                                     <div class="btn-group btn-group-select-num" data-toggle="buttons">
@@ -271,55 +295,152 @@
                                                     <button class="btn btn-primary btn-lg" type="submit">Search for Vacation Homes</button>
                                                 </form>
             </div>
-            <h3 class="booking-title">46 Vacation Homes in New York on Aug 5 - Aug 8 for 5 adult <small><a class="popup-text" style="font-size:18px" href="#search-dialog" data-effect="mfp-zoom-out">Change search</a></small></h3>
+            <h3 class="booking-title">46 Vacation Homes in New York on Aug 5 - Aug 8 for 5 Adults <small><a class="popup-text" style="font-size:18px" href="#search-dialog" data-effect="mfp-zoom-out">Change search</a></small></h3>
             <div class="row">
                 <div class="col-md-3">
                     <aside class="booking-filters text-white">
                         <h3>Filter By:</h3>
                         <ul class="list booking-filters-list">
                            
-                            
+                            <li><h5>Accessibility rating</h5>
+						    <div class="checkbox">
+                                    <label>
+                                        <input class="i-check" type="checkbox" />
+										<div class="booking-item-rating">
+                                            <ul class="icon-group booking-item-rating-stars">
+                                                <li><i class="fa  fa-wheelchair"></i>
+                                                </li>
+                                                <li><i class="fa  fa-wheelchair"></i>
+                                                </li>
+                                                <li><i class="fa  fa-wheelchair"></i>
+                                                </li>
+                                                <li><i class="fa  fa-wheelchair"></i>
+                                                </li>
+                                                <li><i class="fa  fa-wheelchair" ></i>
+                                                </li>
+                                            </ul>
+                                        </div>&nbsp; &nbsp; (280)
+										</label>
+                                </div>
+                                <div class="checkbox">
+                                    <label>
+                                        <input class="i-check" type="checkbox" />
+										
+										<div class="booking-item-rating">
+                                            <ul class="icon-group booking-item-rating-stars">
+                                                <li><i class="fa  fa-wheelchair"></i>
+                                                </li>
+                                                <li><i class="fa  fa-wheelchair"></i>
+                                                </li>
+                                                <li><i class="fa  fa-wheelchair"></i>
+                                                </li>
+                                                <li><i class="fa  fa-wheelchair"></i>
+                                                </li>
+                                                <li><i class="fa  fa-wheelchair" style="color:black" ></i>
+                                                </li>
+                                            </ul>
+                                        </div>(220)
+										</label>
+                                </div>
+                                <div class="checkbox">
+                                    <label>
+                                        <input class="i-check" type="checkbox" />
+										<div class="booking-item-rating">
+                                            <ul class="icon-group booking-item-rating-stars">
+                                                <li><i class="fa  fa-wheelchair"></i>
+                                                </li>
+                                                <li><i class="fa  fa-wheelchair"></i>
+                                                </li>
+                                                <li><i class="fa  fa-wheelchair"></i>
+                                                </li>
+                                                <li><i class="fa  fa-wheelchair" style="color:black"></i>
+                                                </li>
+                                                <li><i class="fa  fa-wheelchair" style="color:black"></i>
+                                                </li>
+                                            </ul>
+                                        </div>(120)
+										</label>
+                                </div>
+                                <div class="checkbox">
+                                    <label>
+                                        <input class="i-check" type="checkbox" />
+										<div class="booking-item-rating">
+                                            <ul class="icon-group booking-item-rating-stars">
+                                                <li><i class="fa  fa-wheelchair"></i>
+                                                </li>
+                                                <li><i class="fa  fa-wheelchair"></i>
+                                                </li>
+                                                <li><i class="fa  fa-wheelchair" style="color:black"></i>
+                                                </li>
+                                                <li><i class="fa  fa-wheelchair" style="color:black"></i>
+                                                </li>
+                                                <li><i class="fa  fa-wheelchair" style="color:black" ></i>
+                                                </li>
+                                            </ul>
+                                        </div>(100)
+										</label>
+                                </div>
+                                <div class="checkbox">
+                                    <label>
+                                        <input class="i-check" type="checkbox" />
+										<div class="booking-item-rating">
+                                            <ul class="icon-group booking-item-rating-stars">
+                                                <li><i class="fa  fa-wheelchair"></i>
+                                                </li>
+                                                <li><i class="fa  fa-wheelchair" style="color:black"></i>
+                                                </li>
+                                                <li><i class="fa  fa-wheelchair" style="color:black"></i>
+                                                </li>
+                                                <li><i class="fa  fa-wheelchair" style="color:black"></i>
+                                                </li>
+                                                <li><i class="fa  fa-wheelchair" style="color:black"></i>
+                                                </li>
+                                            </ul>
+                                        </div>(52)
+										</label>
+                                </div>
+						   </li>
                             <li>
                                 <h5 class="booking-filters-title">Facilities</h5>
                                 <div class="checkbox">
                                     <label>
-                                        <input class="i-check" type="checkbox" />Wheelchair access</label>
+                                        <input class="i-check" type="checkbox" /><img class="origin " style=" width: 23px;" src="img/wheelchair.png" alt="Image Alternative text" title="wheelchair" />Wheelchair access</label>
                                 </div>
                                 <div class="checkbox">
                                     <label>
-                                        <input class="i-check" type="checkbox" /> Wheel in shower</label>
+                                        <input class="i-check" type="checkbox" /> <img class="origin " style=" width: 23px;" src="img/showerchair.png" alt="Image Alternative text" title="wheel in shower">Wheel in shower</label>
                                 </div>
                                 <div class="checkbox">
                                     <label>
-                                        <input class="i-check" type="checkbox" />Wheelchair ramps</label>
+                                        <input class="i-check" type="checkbox" /><img class="origin " style=" width: 23px;" src="img/wheelchairramps.png" alt="Image Alternative text" title="wheelchair ramps">Wheelchair ramps</label>
                                 </div>
                                 <div class="checkbox">
                                     <label>
-                                        <input class="i-check" type="checkbox" /> Electric bed</label>
+                                        <input class="i-check" type="checkbox" /><img class="origin " style=" width: 23px;" src="img/electircbed.png" alt="Image Alternative text" title="electricbed"> Electric bed</label>
                                 </div>
                                 <div class="checkbox">
                                     <label>
-                                        <input class="i-check" type="checkbox" />Grab rails</label>
+                                        <input class="i-check" type="checkbox" /><img class="origin " src="img/grabrails.png" style="border: 1px solid black;width:23px" alt="Image Alternative text" title="Grab bars in tub">Grab rails</label>
                                 </div>
                                 <div class="checkbox">
                                     <label>
-                                        <input class="i-check" type="checkbox" /> Hearing facilities</label>
+                                        <input class="i-check" type="checkbox" /> <img class="origin " src="img/ears.png" style=" width: 23px;" alt="Image Alternative text" title="ears">Hearing facilities</label>
                                 </div>
                                 <div class="checkbox">
                                     <label>
-                                        <input class="i-check" type="checkbox" />Level flat drive</label>
+                                        <input class="i-check" type="checkbox" /><img class="origin " src="img/levelflatdrive.png"  style=" width: 23px;"alt="Image Alternative text" title="levelflatdrive">Level flat drive</label>
                                 </div>
                                 <div class="checkbox">
                                     <label>
-                                        <input class="i-check" type="checkbox" />Visual aids</label>
+                                        <input class="i-check" type="checkbox" /><img class="origin " style=" width: 23px;" src="img/viualaids.png" alt="Image Alternative text" title="viualaids">Visual aids</label>
                                 </div>
                                 <div class="checkbox">
                                     <label>
-                                        <input class="i-check" type="checkbox" />Hoists available</label>
+                                        <input class="i-check" type="checkbox" /><img class="origin " src="img/hoistsavaliable.png" style=" width: 23px;" alt="Image Alternative text" title="hoistsavaliable">Hoists available</label>
                                 </div>
                                 <div class="checkbox">
                                     <label>
-                                        <input class="i-check" type="checkbox" />Pet Friendly</label>
+                                        <input class="i-check" type="checkbox" /><img class="origin " src="img/pet.png" style="border: 1px solid black;width:23px" alt="Image Alternative text" title="hoistsavaliable">Pet Friendly</label>
                                 </div>
                             </li>
                             <li>
@@ -329,10 +450,7 @@
                                         <input class="i-check" type="checkbox" /> Hotels</label>
                                 </div>
                             
-                                <div class="checkbox">
-                                    <label>
-                                        <input class="i-check" type="checkbox" />  Guest Houses </label>
-                                </div>
+                               
                                 <div class="checkbox">
                                     <label>
                                         <input class="i-check" type="checkbox" /> Bed and Breakfast</label>
@@ -340,29 +458,26 @@
                               
                                 <div class="checkbox">
                                     <label>
-                                        <input class="i-check" type="checkbox" /> Villas </label>
+                                        <input class="i-check" type="checkbox" /> Condo</label>
                                 </div>
                                 
                                 <div class="checkbox">
                                     <label>
-                                        <input class="i-check" type="checkbox" /> Cottages</label>
+                                        <input class="i-check" type="checkbox" /> Town House</label>
                                 </div>
                                 <div class="checkbox">
                                     <label>
-                                        <input class="i-check" type="checkbox" />Bungalows</label>
+                                        <input class="i-check" type="checkbox" />Single family</label>
                                 </div>
                                 <div class="checkbox">
                                     <label>
-                                        <input class="i-check" type="checkbox" /> Holiday Homes</label>
+                                        <input class="i-check" type="checkbox" />Duplex</label>
                                 </div>
 								 <div class="checkbox">
                                     <label>
-                                        <input class="i-check" type="checkbox" /> Log Cabins</label>
+                                        <input class="i-check" type="checkbox" /> Room for Rent</label>
                                 </div>
-								 <div class="checkbox">
-                                    <label>
-                                        <input class="i-check" type="checkbox" /> Canal Boats</label>
-                                </div>
+								
                             </li>
                            
                         </ul>
@@ -766,7 +881,7 @@
                 <div class="row row-wrap">
                     <div class="col-md-3">
                         <a class="logo" href="index.html">
-                            <img src="img/logo-invert.png" alt="Image Alternative text" title="Image Title" />
+                            <img src="img/ableTraveler_logo.jpg" alt="Image Alternative text" title="Image Title" />
                         </a>
                         <p class="mb20">Booking, reviews and advice on hotels, resorts, vacation rentals, and lots more!</p>
                         <ul class="list list-horizontal list-space">

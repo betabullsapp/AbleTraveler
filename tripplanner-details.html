@@ -39,6 +39,15 @@
             js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.0";
             fjs.parentNode.insertBefore(js, fjs);
         }(document, 'script', 'facebook-jssdk'));
+		
+		function getParameterByName(name) {
+    name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+    var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+        results = regex.exec(location.search);
+    return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
+}
+
+		
     </script>
     <!-- /FACEBOOK WIDGET -->
     <div class="global-wrap">
@@ -48,7 +57,7 @@
                     <div class="row">
                         <div class="col-md-3">
                             <a class="logo" href="index.html">
-                                <img src="img/logo-invert.png" alt="Image Alternative text" title="Image Title" />
+                                <img src="img/ableTraveler_logo.jpg" alt="Image Alternative text" title="Image Title" />
                             </a>
                         </div>
                         <div class="col-md-3 col-md-offset-2">
@@ -98,8 +107,7 @@
                                 </li>
                                  <li><a href="defaultvacationsearch.html" style="font-size:13px !important">Vacation homes</a>
                                 </li>
-								<li><a href="defaultlimocompanies.html"  style="font-size:13px !important">Limo Companies</a>
-                                </li>
+								
 								<li><a href="defaultcaretakersearch.html" style="font-size:13px !important" >Caretakers</a>
                                 </li>
                             </ul>
@@ -125,23 +133,60 @@
             <div class="booking-item-details">
                 <header class="booking-item-header" style="border:0px solid !important">
 				 <div class="">
-                <h3>Plan for Perfect trip</h3>
+                <h3>Trip Plan</h3>
                
 												<div class="input-daterange" data-date-format="M d, D">
 												<div class="row">
-                                                            <div class="col-md-5">
+                                                            <div class="col-md-3">
                                                     <div class="form-group form-group-lg form-group-icon-left"><i class="fa fa-map-marker input-icon"></i>
-                                                        <label>Where do you want to go?</label>
-                                                        <input class="typeahead form-control" placeholder="Start Location" value="Golden Gate Bridge" id="start" type="text" />
+                                                        <label>Change Destination/options</label>
+                                                        <input class="typeahead form-control" placeholder="Start Location" value="" id="start" type="text" />
                                                     </div>
 													</div>
-													<div class="col-md-4">
+													<div class="col-md-3">
                                                     <div class="form-group form-group-lg form-group-icon-left"><i class="fa fa-map-marker input-icon"></i>
                                                         <label>Destination</label>
-                                                                    <input class=" form-control" placeholder="Destination" value="Pulgas Water Temple" id="end" type="text" />
+                                                                    <input class=" form-control" placeholder="Destination" value="" id="end" type="text" />
                                                     </div>
 													</div>
-													<button class="btn btn-primary btn-md mt40" id="googlemap" onclick="calcRoute()" type="submit">Let's Plan a trip</button>
+													<div class="col-md-2">
+                                                                <div class="form-group form-group-lg ">
+                                                                    <label>How many miles</label>
+                                                                    <input class=" form-control" placeholder="Hours or miles" type="text" />
+                                                                </div>
+                                                            </div>
+															<div class="col-md-2">
+                                                                <div class="form-group form-group-lg form-group-select-plus">
+                                                                    <label>How long?</label>
+                                                                    <div class="btn-group btn-group-select-num" data-toggle="buttons">
+                                                                        <label class="btn btn-primary active">
+                                                                            <input type="radio" name="options" />1</label>
+                                                                        <label class="btn btn-primary">
+                                                                            <input type="radio" name="options" />2</label>
+                                                                        <label class="btn btn-primary">
+                                                                            <input type="radio" name="options" />3</label>
+                                                                        <label class="btn btn-primary">
+                                                                            <input type="radio" name="options" />3+</label>
+                                                                    </div>
+                                                                    <select class="form-control hidden">
+                                                                        <option>1</option>
+                                                                        <option>2</option>
+                                                                        <option>3</option>
+                                                                        <option selected="selected">4</option>
+                                                                        <option>5</option>
+                                                                        <option>6</option>
+                                                                        <option>7</option>
+                                                                        <option>8</option>
+                                                                        <option>9</option>
+                                                                        <option>10</option>
+                                                                        <option>11</option>
+                                                                        <option>12</option>
+                                                                        <option>13</option>
+                                                                        <option>14</option>
+                                                                    </select>
+                                                                </div>
+                                                            </div>
+													<button class="btn btn-primary btn-md mt40" id="googlemap" onclick="calcRoute()" type="submit">Plan my drive</button>
 													</div></div>
                                                     
                                                     
@@ -209,7 +254,7 @@
                                 </ul><span class="booking-item-rating-number"><b >4.7</b> of 5 <small class="text-smaller">guest rating</small></span>
                                 <p><a class="text-default" href="#">based on 1535 reviews</a>
                                 </p>
-								<span class="btn btn-primary btn-md " href="vacation-payment.html"><i class="fa fa-star"></i>Add to your favorite Trip</span>
+								<span class="btn btn-primary btn-md " href="vacation-payment.html"><i class="fa fa-star"></i>Add to favorites</span>
                             </div>
                         </div>
                         <div class="row">
@@ -514,7 +559,7 @@
                 <div class="row row-wrap">
                     <div class="col-md-3">
                         <a class="logo" href="index.html">
-                            <img src="img/logo-invert.png" alt="Image Alternative text" title="Image Title" />
+                            <img src="img/ableTraveler_logo.jpg" alt="Image Alternative text" title="Image Title" />
                         </a>
                         <p class="mb20">Booking, reviews and advice on hotels, resorts, vacation rentals, and lots more!</p>
                         <ul class="list list-horizontal list-space">
@@ -584,6 +629,20 @@
         <script src="js/typeahead.js"></script>
         <script src="js/owl-carousel.js"></script>
         <script src="js/custom.js"></script>
+		<script src="js/dropit.js"></script>
+        <script src="js/ionrangeslider.js"></script>
+        <script src="js/icheck.js"></script>
+        <script src="js/fotorama.js"></script>
+        <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+        <script src="js/typeahead.js"></script>
+        <script src="js/card-payment.js"></script>
+        <script src="js/magnific.js"></script>
+       
+        <script src="js/fitvids.js"></script>
+        <script src="js/tweet.js"></script>
+        <script src="js/countdown.js"></script>
+        <script src="js/gridrotator.js"></script>
+        
     </div>
 	<script>
 	  $(function(){
@@ -599,6 +658,15 @@
                 $('b', this).toggleClass("caret caret-up");                
             });
     });
+	
+	
+$(document).ready(function(){
+var start = getParameterByName('s');
+var end = getParameterByName('d');
+$('input[placeholder="Start Location"]').val(s);
+$('input[placeholder="Destination"]').val(d);
+calcRoute();
+});
 	</script>
 	
 	<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&signed_in=true"></script>
@@ -638,6 +706,7 @@ function calcRoute() {
 }
 
 google.maps.event.addDomListener(window, 'load', initialize);
+
 
     </script>
 	   <style>
@@ -728,9 +797,7 @@ google.maps.event.addDomListener(window, 'load', initialize);
 	
 	<script>
 
-$(document).ready(function(){
-    $("#googlemap").click(); 
-});
+
 </script>
 	
 </body>
