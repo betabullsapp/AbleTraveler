@@ -129,6 +129,7 @@ $('.booking-item-price-calc .checkbox label').click(function() {
                 }
             });
         };
+		
     if (!checked) {
         animateInt(eqPriceInt, eqPrice, true);
         animateInt(tPriceInt, tPrice, true);
@@ -302,14 +303,15 @@ $('.form-group-cc-cvc input').payment('formatCardCVC');
 
 
 if ($('#map-canvas').length) {
-    var map,
+	
+	 var map,
         service;
 
     jQuery(function($) {
         $(document).ready(function() {
             var latlng = new google.maps.LatLng(40.7564971, -73.9743277);
             var myOptions = {
-                zoom: 16,
+                zoom: 15,
                 center: latlng,
                 mapTypeId: google.maps.MapTypeId.ROADMAP,
                 scrollwheel: false
@@ -323,7 +325,14 @@ if ($('#map-canvas').length) {
                 map: map
             });
             marker.setMap(map);
+ var request = {
+    location: latlng,
+    radius: '1000',
+    types: ['hospital','pharmacy']
+  };
 
+  service = new google.maps.places.PlacesService(map);
+  service.nearbySearch(request, callback);
 
             $('a[href="#google-map-tab"]').on('shown.bs.tab', function(e) {
                 google.maps.event.trigger(map, 'resize');
@@ -332,7 +341,153 @@ if ($('#map-canvas').length) {
         });
     });
 }
+function callback(results, status) {
+  if (status == google.maps.places.PlacesServiceStatus.OK) {
+    for (var i = 0; i < results.length; i++) {
+      var place = results[i];
+       createMarker(results[i]);
+    }
+  }
+}
 
+function createMarker(place) {
+  var placeLoc = place.geometry.location;
+  var h=false;
+  
+  for(var i=0; i<place.types.length;i++)
+  {
+	  if(place.types[i].toLowerCase()=='hospital')
+	  { h=!h; break;}
+  }
+  var marker;
+  if(h)
+   marker= new google.maps.Marker({
+    map: map,
+    position: place.geometry.location,
+	icon:'img/H.png',
+	title:place.name
+});
+else
+ marker= new google.maps.Marker({
+    map: map,
+    position: place.geometry.location,
+	icon:'img/images (1).png',
+	title:place.name
+});
+
+  // google.maps.event.addListener(marker, 'move', function() {
+	  // $(this).attr('title',place.name);
+    // // infowindow.open(map, this);
+    // // infowindow.setContent(place.name);
+    // // infowindow.open(map, this);
+  // });
+}
+	
+	
+	//changed by saimadhan mohan
+	
+	if ($('#map-canvas1').length) {
+	
+	 var map,
+        service;
+
+    jQuery(function($) {
+        $(document).ready(function() {
+            var latlng = new google.maps.LatLng(40.7564971, -73.9743277);
+            var myOptions = {
+                zoom: 15,
+                center: latlng,
+                mapTypeId: google.maps.MapTypeId.ROADMAP,
+                scrollwheel: false
+            };
+
+            map = new google.maps.Map(document.getElementById("map-canvas1"), myOptions);
+
+
+            var markers = new google.maps.Marker({
+                position: latlng,
+                map: map
+            });
+            markers.setMap(map);
+ var requests = {
+    location: latlng,
+    radius: '1000',
+    types: ['hospital','pharmacy']
+  };
+
+  service = new google.maps.places.PlacesService(map);
+  service.nearbySearch(requests, callback);
+
+            $('a[href="#google-map-tab1"]').on('shown.bs.tab', function(e) {
+                google.maps.event.trigger(map, 'resize');
+                map.setCenter(latlng);
+            });
+        });
+    });
+}
+
+
+  // google.maps.event.addListener(marker, 'move', function() {
+	  // $(this).attr('title',place.name);
+    // // infowindow.open(map, this);
+    // // infowindow.setContent(place.name);
+    // // infowindow.open(map, this);
+  // });
+
+	
+	
+    // var map,
+        // service;
+
+    // jQuery(function($) {
+        // $(document).ready(function() {
+            // var latlng = new google.maps.LatLng(40.7564971, -73.9743277);
+            // var myOptions = {
+                // zoom: 15,
+                // center: latlng,
+                // mapTypeId: google.maps.MapTypeId.ROADMAP,
+                // scrollwheel: false
+            // };
+
+            // map = new google.maps.Map(document.getElementById("map-canvas"), myOptions);
+
+
+            // var marker = new google.maps.Marker({
+                // position: latlng,
+                // map: map
+            // });
+            // marker.setMap(map);
+ // var request = {
+    // location: latlng,
+    // radius: '1000',
+    // types: ['school']
+  // };
+
+  // service = new google.maps.places.PlacesService(map);
+  // service.nearbySearch(request, callback);
+
+            // $('a[href="#google-map-tab"]').on('shown.bs.tab', function(e) {
+                // google.maps.event.trigger(map, 'resize');
+                // map.setCenter(latlng);
+            // });
+        // });
+    // });
+// }
+// function callback(results, status) {
+  // if (status == google.maps.places.PlacesServiceStatus.OK) {
+    // for (var i = 0; i < results.length; i++) {
+      // var place = results[i];
+      // // createMarker(results[i]);
+    // }
+  // }
+// }
+
+// function createMarker(place) {
+  // var placeLoc = place.geometry.location;
+  // var marker = new google.maps.Marker({
+    // map: map,
+    // position: place.geometry.location
+// });}
 
 $('.card-select > li').click(function() {
     self = this;
