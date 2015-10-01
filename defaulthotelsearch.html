@@ -426,7 +426,7 @@
                             </a>
                         </li>
                         <li>
-                            <a class="booking-item" href="#">
+                            <a class="booking-item" >
                                 <div class="row">
                                     <div class="col-md-3">
                                         <div class="booking-item-img-wrap">
@@ -464,12 +464,16 @@
 									<span class="btn btn-primary redirect">View details</span>
 									<span class="heart"><i class="fa fa-heart" title="Add to favourite"></i></span>
                                     </div>
-									
+									<br/>
+									<span class="btn btn-primary " id="mapshow2" style="margin-top: 1%; margin-left: 2%; font-size: smaller; background-color: #428bca; border-color: #357ebd;">map it</span>
+							<div class="" id="google-map-tab2">
+                                    <div id="map-canvas2" style="width:100%; height:500px;"></div>
+                                </div> 
                                 </div>
                             </a>
                         </li>
                         <li>
-                            <a class="booking-item" href="#">
+                            <a class="booking-item" >
                                 <div class="row">
                                     <div class="col-md-3">
                                         <div class="booking-item-img-wrap">
@@ -507,52 +511,15 @@
 									<span class="btn btn-primary redirect">View details</span>
 									<span class="heart"><i class="fa fa-heart" title="Add to favourite"></i></span>
                                     </div>
-									
+									<br/>
+									<span class="btn btn-primary " id="mapshow3" style="margin-top: 1%; margin-left: 2%; font-size: smaller; background-color: #428bca; border-color: #357ebd;">map it</span>
+							<div class="" id="google-map-tab3">
+                                    <div id="map-canvas3" style="width:100%; height:500px;"></div>
+                                </div> 
                                 </div>
                             </a>
                         </li>
-                        <li>
-                            <a class="booking-item" href="#">
-                                <div class="row">
-                                    <div class="col-md-3">
-                                        <div class="booking-item-img-wrap">
-                                            <img src="img/6961_57_z.jpg" alt="Image Alternative text" title="Omni Charlotte Hotel" />
-                                            <div class="booking-item-img-num"><i class="fa fa-picture-o"></i>5</div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="booking-item-rating">
-                                            <ul class="icon-group booking-item-rating-stars">
-                                                                                                <li><i class="fa  fa-wheelchair"></i>
-                                                </li>
-                                                <li><i class="fa  fa-wheelchair"></i>
-                                                </li>
-                                                <li><i class="fa  fa-wheelchair"></i>
-                                                </li>
-                                                <li><i class="fa  fa-wheelchair" ></i>
-                                                </li>
-                                                <li><i class="fa  fa-wheelchair" style="color:black"></i>
-                                                </li>
-                                            </ul><span class="booking-item-rating-number"><b >4</b> of 5</span><small>(229 reviews)</small>
-                                        </div>
-                                        <h5 class="booking-item-title">Omni Charlotte Hotel</h5>
-                                        <p class="booking-item-address"><i class="fa fa-map-marker"></i> Charlotte,NC</p>
-										<p>To deliver good accommodations and services to our discerning guests, just 10 minutes away from the city center of Macau,it offer total comfort and convenience for both business and leisure travelers..</p>
-										<img class="origin " src="img/wheelchair.png" alt="Image Alternative text" title="wheelchair" />
-										<img class="origin " src="img/wheelchairramps.png" alt="Image Alternative text" title="Easy accessable first floor rooms" />
-										<img class="origin " src="img/electircbed.png" alt="Image Alternative text" title="Open frame bed" />
-                                         <img class="origin " src="img/specialneedssuitable.png" alt="Image Alternative text" title="Accessible full service " />
-										
-                                    </div>
-                                    <div class="col-md-3"><span class="booking-item-price-from">from</span>
-									<span class="booking-item-price">$139</span><span>/night</span>
-									<span class="btn btn-primary redirect">View details</span>
-									<span class="heart"><i class="fa fa-heart" title="Add to favourite"></i></span>
-                                    </div>
-									
-                                </div>
-                            </a>
-                        </li>
+                        
                        
                       
                     </ul>
@@ -751,7 +718,28 @@
 		    
 		});
 	
+	$(window).load(function()
+	{
+	$("#google-map-tab2").hide();
+	})
 	
+	
+	    $("#mapshow2").click(function()
+		{
+		   $("#google-map-tab2").show();
+		    
+		});
+		$(window).load(function()
+	{
+	$("#google-map-tab3").hide();
+	})
+	
+	
+	    $("#mapshow3").click(function()
+		{
+		   $("#google-map-tab3").show();
+		    
+		});
 	
 	
 	</script>
