@@ -304,20 +304,43 @@ $('.form-group-cc-cvc input').payment('formatCardCVC');
 
 if ($('#map-canvas').length) {
 	
-	 var map,
-        service;
+	 var map,map1,map2,map3,
+        service,service1,service2,service3;
 
     jQuery(function($) {
         $(document).ready(function() {
             var latlng = new google.maps.LatLng(40.7564971, -73.9743277);
+			var latlng1 = new google.maps.LatLng(40.7564971, -73.9743277);
+			var latlng2 = new google.maps.LatLng(40.7564971, -73.9743277);
+			var latlng3 = new google.maps.LatLng(40.7564971, -73.9743277);
             var myOptions = {
                 zoom: 15,
                 center: latlng,
                 mapTypeId: google.maps.MapTypeId.ROADMAP,
                 scrollwheel: false
             };
-
+			var myOptions1 = {
+                zoom: 15,
+                center: latlng1,
+                mapTypeId: google.maps.MapTypeId.ROADMAP,
+                scrollwheel: false
+            };
+			var myOptions2 = {
+                zoom: 15,
+                center: latlng2,
+                mapTypeId: google.maps.MapTypeId.ROADMAP,
+                scrollwheel: false
+            };
+			var myOptions3 = {
+                zoom: 15,
+                center: latlng3,
+                mapTypeId: google.maps.MapTypeId.ROADMAP,
+                scrollwheel: false
+            };
             map = new google.maps.Map(document.getElementById("map-canvas"), myOptions);
+            map1 = new google.maps.Map(document.getElementById("map-canvas1"), myOptions1);
+            map2 = new google.maps.Map(document.getElementById("map-canvas2"), myOptions2);
+            map3 = new google.maps.Map(document.getElementById("map-canvas3"), myOptions3);
 
 
             var marker = new google.maps.Marker({
@@ -325,32 +348,111 @@ if ($('#map-canvas').length) {
                 map: map
             });
             marker.setMap(map);
+			var marker1 = new google.maps.Marker({
+                position: latlng1,
+                map: map1
+            });
+            marker1.setMap(map1);
+			var marker2 = new google.maps.Marker({
+                position: latlng2,
+                map: map2
+            });
+            marker2.setMap(map2);
+			var marker3 = new google.maps.Marker({
+                position: latlng3,
+                map: map3
+            });
+            marker3.setMap(map3);
  var request = {
     location: latlng,
     radius: '1000',
     types: ['hospital','pharmacy']
   };
-
+ 
+ var request1 = {
+    location: latlng1,
+    radius: '1000',
+    types: ['hospital','pharmacy']
+  }; 
+  
+  var request2 = {
+    location: latlng2,
+    radius: '1000',
+    types: ['hospital','pharmacy']
+  }; 
+  
+  var request3 = {
+    location: latlng3,
+    radius: '1000',
+    types: ['hospital','pharmacy']
+  };
+  
   service = new google.maps.places.PlacesService(map);
   service.nearbySearch(request, callback);
-
             $('a[href="#google-map-tab"]').on('shown.bs.tab', function(e) {
                 google.maps.event.trigger(map, 'resize');
                 map.setCenter(latlng);
             });
+
+	  service1 = new google.maps.places.PlacesService(map1);
+  service1.nearbySearch(request1, callback1);
+            $('a[href="#google-map-tab1"]').on('shown.bs.tab', function(e) {
+                google.maps.event.trigger(map1, 'resize');
+                map1.setCenter(latlng1);
+            });
+
+	  service2 = new google.maps.places.PlacesService(map2);
+  service2.nearbySearch(request2, callback2);
+            $('a[href="#google-map-tab2"]').on('shown.bs.tab', function(e) {
+                google.maps.event.trigger(map2, 'resize');
+                map2.setCenter(latlng2);
+            });
+
+	  service3 = new google.maps.places.PlacesService(map3);
+  service3.nearbySearch(request3, callback3);
+            $('a[href="#google-map-tab3"]').on('shown.bs.tab', function(e) {
+                google.maps.event.trigger(map3, 'resize');
+                map3.setCenter(latlng3);
+            });
         });
     });
+	
 }
 function callback(results, status) {
   if (status == google.maps.places.PlacesServiceStatus.OK) {
     for (var i = 0; i < results.length; i++) {
       var place = results[i];
-       createMarker(results[i]);
+       createMarker(results[i],map);
     }
   }
 }
 
-function createMarker(place) {
+function callback1(results, status) {
+  if (status == google.maps.places.PlacesServiceStatus.OK) {
+    for (var i = 0; i < results.length; i++) {
+      var place = results[i];
+       createMarker(results[i],map1);
+    }
+  }
+}
+function callback2(results, status) {
+  if (status == google.maps.places.PlacesServiceStatus.OK) {
+    for (var i = 0; i < results.length; i++) {
+      var place = results[i];
+       createMarker(results[i],map2);
+    }
+  }
+}
+function callback3(results, status) {
+  if (status == google.maps.places.PlacesServiceStatus.OK) {
+    for (var i = 0; i < results.length; i++) {
+      var place = results[i];
+       createMarker(results[i],map3);
+    }
+  }
+}
+
+function createMarker(place,map) {
   var placeLoc = place.geometry.location;
   var h=false;
   
@@ -386,45 +488,7 @@ else
 	
 	//changed by saimadhan mohan
 	
-	if ($('#map-canvas1').length) {
 	
-	 var map,
-        service;
-
-    jQuery(function($) {
-        $(document).ready(function() {
-            var latlng = new google.maps.LatLng(40.7564971, -73.9743277);
-            var myOptions = {
-                zoom: 15,
-                center: latlng,
-                mapTypeId: google.maps.MapTypeId.ROADMAP,
-                scrollwheel: false
-            };
-
-            map = new google.maps.Map(document.getElementById("map-canvas1"), myOptions);
-
-
-            var markers = new google.maps.Marker({
-                position: latlng,
-                map: map
-            });
-            markers.setMap(map);
- var requests = {
-    location: latlng,
-    radius: '1000',
-    types: ['hospital','pharmacy']
-  };
-
-  service = new google.maps.places.PlacesService(map);
-  service.nearbySearch(requests, callback);
-
-            $('a[href="#google-map-tab1"]').on('shown.bs.tab', function(e) {
-                google.maps.event.trigger(map, 'resize');
-                map.setCenter(latlng);
-            });
-        });
-    });
-}
 
 
   // google.maps.event.addListener(marker, 'move', function() {
