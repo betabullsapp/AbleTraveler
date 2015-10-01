@@ -661,11 +661,12 @@
 	
 	
 $(document).ready(function(){
+debugger;
 var start = getParameterByName('s');
 var end = getParameterByName('d');
-$('input[placeholder="Start Location"]').val(s);
-$('input[placeholder="Destination"]').val(d);
-calcRoute();
+$('input[placeholder="Start Location"]').val(start);
+$('input[placeholder="Destination"]').val(end);
+
 });
 	</script>
 	
@@ -684,13 +685,15 @@ function initialize() {
       mapOptions);
   directionsDisplay.setMap(map);
   directionsDisplay.setPanel(document.getElementById('directions-panel'));
-
+  calcRoute();
   var control = document.getElementById('control');
   control.style.display = 'block';
   map.controls[google.maps.ControlPosition.TOP_CENTER].push(control);
+
 }
 
 function calcRoute() {
+debugger;
   var start = document.getElementById('start').value;
   var end = document.getElementById('end').value;
   var request = {
