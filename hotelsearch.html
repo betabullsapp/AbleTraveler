@@ -429,7 +429,7 @@
                                 </div>
                                 <div class="checkbox">
                                     <label>
-                                        <input class="i-check" type="checkbox" />pool lift available</label>
+                                        <input class="i-check" type="checkbox" />Pool lift available</label>
                                 </div>
                                 <div class="checkbox">
                                     <label>
@@ -547,7 +547,7 @@
                                     </div>
 									<br/>
 									<span class="btn btn-primary " id="mapshow" style="margin-top: 1%; margin-left: 2%; font-size: smaller; background-color: #428bca; border-color: #357ebd;">map it</span>
-							<div class="" id="google-map-tab">
+							<div class="" id="google-map-tab" style="margin-top:11%">
                                     <div id="map-canvas" style="width:100%; height:500px;"></div>
                                 </div> 
                                 </div>
@@ -598,7 +598,7 @@
                                     </div>
 									<br/>
 									<span class="btn btn-primary " id="mapshow1" style="margin-top: 1%; margin-left: 2%; font-size: smaller; background-color: #428bca; border-color: #357ebd;">map it</span>
-							<div class="" id="google-map-tab1">
+							<div class="" id="google-map-tab1" style="margin-top:11%">
                                     <div id="map-canvas1" style="width:100%; height:500px;"></div>
                                 </div> 
                                 </div>
@@ -645,7 +645,7 @@
                                     </div>
 									<br/>
 									<span class="btn btn-primary " id="mapshow2" style="margin-top: 1%; margin-left: 2%; font-size: smaller; background-color: #428bca; border-color: #357ebd;">map it</span>
-							<div class="" id="google-map-tab2">
+							<div class="" id="google-map-tab2" style="margin-top:11%">
                                     <div id="map-canvas2" style="width:100%; height:500px;"></div>
                                 </div> 
                                 </div>
@@ -691,7 +691,7 @@
                                     </div>
 									<br/>
 									<span class="btn btn-primary " id="mapshow3" style="margin-top: 1%; margin-left: 2%; font-size: smaller; background-color: #428bca; border-color: #357ebd;">map it</span>
-							<div class="" id="google-map-tab3">
+							<div class="" id="google-map-tab3" style="margin-top:11%">
                                     <div id="map-canvas3" style="width:100%; height:500px;"></div>
                                 </div> 
                                 </div>
@@ -863,7 +863,7 @@
 	
 	    $("#mapshow").click(function()
 		{
-		   $("#google-map-tab").show();
+		   $("#google-map-tab").slideToggle('fast');
 		    
 		});
 	$(window).load(function()
@@ -874,7 +874,7 @@
 	
 	    $("#mapshow1").click(function()
 		{
-		   $("#google-map-tab1").show();
+		   $("#google-map-tab1").slideToggle('fast');
 		    
 		});
 		
@@ -886,7 +886,7 @@
 	
 	    $("#mapshow2").click(function()
 		{
-		   $("#google-map-tab2").show();
+		   $("#google-map-tab2").slideToggle('fast');
 		    
 		});
 		$(window).load(function()
@@ -897,7 +897,7 @@
 	
 	    $("#mapshow3").click(function()
 		{
-		   $("#google-map-tab3").show();
+		   $("#google-map-tab3").slideToggle('fast');
 		    
 		});
 	</script>
