@@ -23,7 +23,19 @@
 	
     <script src="js/modernizr.js"></script>
 
+<script type="text/javascript" src="docs/js/jquery-2.1.3.min.js"></script>
+        <script type="text/javascript" src="docs/js/bootstrap-3.3.2.min.js"></script>
+        <script type="text/javascript" src="docs/js/prettify.js"></script>
 
+        <link rel="stylesheet" href="dist/css/bootstrap-multiselect.css" type="text/css">
+        <script type="text/javascript" src="dist/js/bootstrap-multiselect.js"></script>
+        <script type="text/javascript" src="dist/js/bootstrap-multiselect-collapsible-groups.js"></script>
+
+        <script type="text/javascript">
+            $(document).ready(function() {
+                window.prettyPrint() && prettyPrint();
+            });
+        </script>
 </head>
 
 <body>
@@ -342,21 +354,25 @@
                                                         <input class="typeahead form-control" placeholder="City, State, Point of Interest or U.S. Zip Code" type="text" />
                                                     </div>
 													</div>
-													<div class="col-md-3">
-                                                                <div class="form-group form-group-lg ">
-                                                                    <label>Property type</label>
-                                                                    <select class="form-control " >
-                                                                        <option selected="selected">All Types</option>
-                                                                        <option >Condo</option>
-                                                                        <option>Town house</option>
-                                                                        <option>Single family</option>
-                                                                        <option>Duplex</option>
-                                                                        <option>Room for rent</option>
-                                                                       
-                                                                    </select>
-                                                                </div>
-                                                            </div>
 													<div class="col-md-2">
+                                                               <div class="example">
+                                        <script type="text/javascript">
+                                            $(document).ready(function() {
+                                                $('#example-multiple-selected').multiselect();
+                                            });
+                                        </script>
+										  <label style="font-size:16px">Property type</label>
+                                        <select id="example-multiple-selected" class="form-control " multiple="multiple">
+                                            <option value="1" selected="selected">All Types</option>
+                                            <option value="2" >Condo</option>
+                                            <option value="3" >Town house</option><option value="4">Single family</option>
+                                            <option value="5">Duplex</option>
+                                            <option value="6">Room for rent</option>
+											
+                                        </select>
+                                    </div>
+                                                            </div>
+													<div class="col-md-2" style="margin-left:4%">
                                                                 <div class="form-group form-group-lg form-group-icon-left"><i class="fa fa-calendar input-icon input-icon-highlight"></i>
                                                                     <label>Check-in</label>
                                                                     <input class="form-control" name="start" type="text" />
@@ -540,14 +556,14 @@
                                                 </form>
                                             </div>
                                             <div class="tab-pane fade" id="tab-5">
-                                                <h2>Search for Travel companion/Nurse</h2>
+                                                <h2>Search for Travel Companion/Nurse</h2>
                                                 <form>
                                                     <div class="input-daterange" data-date-format="M d, D">
                                                         <div class="row">
                                                             <div class="col-md-5">
-                                                                <div class="form-group form-group-lg form-group-icon-left"><i class="fa fa-map-marker input-icon"></i>
-                                                                    <label>Travel companion/Nurse</label>
-                                                                    <input class="typeahead form-control" placeholder="Local location or Destination location " type="text" />
+                                                                <div class="form-group form-group-lg form-group-icon-left"><i class="fa fa-map-marker input-icon" style="margin-top:-7%"></i>
+                                                                    <label style="display:none">Travel companion/Nurse</label>
+                                                                    <input class="typeahead form-control" style="margin-top:6.8%" placeholder="Local location or Destination location " type="text" />
                                                                 </div>
                                                             </div>
 															<div class="col-md-2">
@@ -556,7 +572,7 @@
                                                                     <select class="form-control">
 																	<option selected="selected">Please select</option>
                                                                         <option>Travel Companion</option>
-                                                                        <option>Nurse</option>
+                                                                        <option>Travel Nurse</option>
                                                                     </select>
                                                                 </div>
                                                             </div>
@@ -1026,9 +1042,7 @@
             </div>
         </footer>
 
-        <script src="js/jquery.js"></script>
-        <script src="js/bootstrap.js"></script>
-        <script src="js/slimmenu.js"></script>
+         <script src="js/slimmenu.js"></script>
         <script src="js/bootstrap-datepicker.js"></script>
         <script src="js/bootstrap-timepicker.js"></script>
         <script src="js/nicescroll.js"></script>
@@ -1086,8 +1100,24 @@ $( '.dropdown-menu a' ).on( 'click', function( event ) {
    return false;
 });
 	</script>
-	<style>
-	
+	<style>	
+	.multiselect {
+    margin-left: 0;
+   
+    height: 46px;
+    width: 205px;
+    padding-left: -1px;
+    /* padding-right: 0 !important; */
+    text-align: -webkit-auto;
+}
+.multiselect-selected-text
+{
+font-size: 12px;
+}
+.multiselect-container 
+{
+  min-width:200px
+}
 	</style>
 	
 </body>
