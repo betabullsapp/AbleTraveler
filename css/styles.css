@@ -2412,11 +2412,12 @@ div.nav-drop {
   padding: 0 7px;
 }
 footer#main-footer {
-  background: #262626;
+  background: white;
   padding: 60px 0 30px 0;
-  color: #e6e6e6;
-  font-size: 11px;
+  color: #818181;
+  font-size: 12px;
   line-height: 1.4em;
+  border-top:1.5px solid #09539C;
 }
 footer#main-footer .logo {
   margin-bottom: 15px;
@@ -2427,12 +2428,12 @@ footer#main-footer h2,
 footer#main-footer h3,
 footer#main-footer h4,
 footer#main-footer h5 {
-  color: #fff;
+  color: #737373;
 }
 footer#main-footer .form-control {
-  background: #121212;
-  border-color: #000;
-  color: #fff;
+  background: white;
+  border-color: #09539C;
+  color: black;
 }
 footer#main-footer .form-control:focus {
   border-color: #09539C;
