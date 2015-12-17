@@ -287,7 +287,7 @@ blockquote:before {
 }
 .btn-primary {
   background: #09539C;
-  border-color: #09539C;
+  border-color: #09539C !important;
 }
 .btn-primary:hover {
   background: #09539C;
