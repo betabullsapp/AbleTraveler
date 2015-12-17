@@ -2428,7 +2428,7 @@ footer#main-footer h2,
 footer#main-footer h3,
 footer#main-footer h4,
 footer#main-footer h5 {
-  color: #737373;
+  color: white;
 }
 footer#main-footer .form-control {
   background: white;
@@ -4074,6 +4074,7 @@ fieldset[disabled] .datepicker table tr td span.active.disabled:hover.active {
   text-align: center;
   display: block;
   background: #09539C;
+  background-color: #09539C !important;
   color: #fff;
   -webkit-transition: 0.3s;
   -moz-transition: 0.3s;
