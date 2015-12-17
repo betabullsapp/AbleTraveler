@@ -1053,7 +1053,7 @@ ul.slimmenu li ul li {
   display: block;
 }
 ul.slimmenu li ul li a {
-  background-color: #333;
+  background-color: grey;
   color: #fff;
 }
 ul.slimmenu li > ul {
