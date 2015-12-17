@@ -6879,7 +6879,7 @@ fieldset[disabled] .datepicker table tr td span.active.disabled:hover.active {
   -webkit-border-radius: 5px;
   border-radius: 5px;
   font-size: 11px;
-  background: #4d4d4d;
+  background: grey;
   color: #fff;
   padding: 15px 0;
   width: 263px;
